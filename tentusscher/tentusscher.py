@@ -8,24 +8,11 @@ plt.rc('font', family='malgun gothic')
 # 마이너스 깨짐 방지
 plt.rcParams['axes.unicode_minus'] = False
 
-#
-# This example file uses the O'Hara-Rudy model in epicardial mode to produce
-# and display a single AP.
-#
-
 # Get model from magic method
 m, p, x = myokit.load('tentusscher.mmt')
 
-
-# Create a pacing protocol
-# bcl = 1000
-# p = myokit.pacing.blocktrain(bcl, 1 , offset=20)
-
 # Create simulation and run
 s = myokit.Simulation(m, p)
-
-# Pre-pace for a hundred beats
-# s.pre(bcl*100)
 
 # Run simulation
 d = s.run(1000, log_interval=0.001)
