@@ -320,6 +320,7 @@ while i <= next_time - current_time:
 
 
 # Euler method call
+plt.suptitle("Euler method in tentusscher")
 plt.subplot(2, 4, 1)
 plt.plot(times, a12)
 plt.title('Action potential')
