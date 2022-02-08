@@ -473,5 +473,4 @@ def plot_model(voi, states, algebraic, rates):
 
 if __name__ == "__main__":
     (voi, states, algebraic, rates) = solve_model()
-    # print(algebraic[49])
     plot_model(voi, states, algebraic, rates)
