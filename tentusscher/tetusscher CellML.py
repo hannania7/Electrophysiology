@@ -428,7 +428,7 @@ def solve_model():
     (init_states, constants) = initConsts()
 
     # Set timespan to solve over
-    voi = linspace(100, 1000, 1000000)
+    voi = linspace(0, 1000, 1000000)
 
     # Construct ODE object to solve
     r = ode(computeRates)
