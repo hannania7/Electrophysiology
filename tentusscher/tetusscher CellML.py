@@ -231,12 +231,12 @@ def initConsts():
     constants[45] = 1
     constants[46] = 2.00000
 
-    # me
+    
     c = []
     for i in range(len(states)):
         c.append(states[i])
 
-    # me
+    
     d = []
     for i in range(len(constants)):
         d.append(constants[i])
@@ -330,8 +330,8 @@ def computeRates(voi, states, constants):
     rates[3] = algebraic[66]*(((algebraic[65]-algebraic[63])+algebraic[61])-(((algebraic[54]+algebraic[55]+algebraic[59])-2.00000*algebraic[58])/(2.00000*constants[4]*constants[2]))*constants[3])
     algebraic[67] = 1.00000/(1.00000+(constants[38]*constants[39])/(power(states[15]+constants[39], 2.00000)))
     rates[15] = ((algebraic[67]*constants[4])/constants[40])*(algebraic[63]-(algebraic[61]+algebraic[65]))
-
-    # me
+    
+    
     a = []
     for i in range(len(rates)):
         a.append(rates[i])
@@ -410,7 +410,7 @@ def computeAlgebraic(constants, states, voi):
     algebraic[66] = 1.00000/(1.00000+(constants[36]*constants[37])/(power(states[3]+constants[37], 2.00000)))
     algebraic[67] = 1.00000/(1.00000+(constants[38]*constants[39])/(power(states[15]+constants[39], 2.00000)))
 
-    # me
+    
     b = []
     for i in range(len(algebraic)):
         b.append(algebraic[i])
@@ -447,7 +447,7 @@ def solve_model():
         else:
             break
 
-    # me    
+    
     rates = computeRates(voi, states, constants)
 
     # Compute algebraic variables
