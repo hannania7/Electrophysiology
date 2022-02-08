@@ -318,9 +318,8 @@ while i <= next_time - current_time:
     ICaL2.append(ICaL)
     iK12.append(iK1)
 
-np.shape(a12)
+
 # Euler method call
-plt.title("IKr + iK1 + Ito + IKs + ICaL + INaCa + INaK + IpCa + IpK + IbCa + IbNa + INa")
 plt.subplot(2, 4, 1)
 plt.plot(times, a12)
 plt.title('Action potential')
