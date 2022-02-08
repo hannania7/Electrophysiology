@@ -16,9 +16,7 @@ s = myokit.Simulation(m, p)
 
 # Run simulation
 d = s.run(1000, log_interval=0.001)
-# a = myokit.SimulationOpenCL(d['membrane.V'])
 
-# print(a)
 print(np.shape(d['membrane.V']))
 
 # Display the result
