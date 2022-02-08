@@ -14,7 +14,7 @@ FFRT = F*F/(R*T)
 
 current_time = 0
 next_time = 1000
-dt = 0.001
+dt = 0.005
 V = -86.2
 m = 0
 h = 0.75
