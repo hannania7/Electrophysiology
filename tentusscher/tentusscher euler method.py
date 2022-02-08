@@ -250,7 +250,7 @@ while i <= next_time - current_time:
         + IbNa)
     
 
-    if current_time >= 0 and current_time <= 1:
+    if current_time >= 100 and current_time <= 101:
         i_stim = -52
         dV = -(Iion + i_stim)
     else:
