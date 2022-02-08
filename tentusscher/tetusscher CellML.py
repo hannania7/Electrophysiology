@@ -175,10 +175,10 @@ def initConsts():
     constants[5] = 0.03
     constants[6] = 5.4
     constants[7] = 140
-    states[1] = 138.3
+    states[1] = 137.18
     states[2] = 11.6
     constants[8] = 2
-    states[3] = 0.0002
+    states[3] = 0.000045
     constants[9] = 5.405
     constants[10] = 0.096
     states[4] = 0
