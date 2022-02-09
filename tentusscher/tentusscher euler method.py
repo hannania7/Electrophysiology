@@ -14,7 +14,7 @@ FFRT = F*F/(R*T)
 
 current_time = 0
 next_time = 1000
-dt = 0.005
+dt = 0.001
 V = -86.2
 m = 0
 h = 0.75
@@ -26,25 +26,24 @@ d = 0
 f = 1
 fca = 1
 Nai = 11.6
-Cai = 0.0002
+Cai = 0.000045
 Casr = 0.2
-Ki = 138.3
+Ki = 137.18
 xr1 = 0
 xr2 = 1
 g = 1
 
-a12 = [-86.2]
-times = [current_time]
-Cai2 = [0.0002]
-INa2 = [0]
-Ito2 = [0]
-IKr2 = [0]
-IKs2 = [0]
-ICaL2 = [0]
-iK12 = [0]
+a12 = []
+times = []
+Cai2 = []
+INa2 = []
+Ito2 = []
+IKr2 = []
+IKs2 = []
+ICaL2 = []
+iK12 = []
 
-i = 0
-while i <= next_time - current_time:
+while current_time <= next_time:
     GNa = 14.838
 
     m1 = 1 / (np.power(1 + np.exp((-56.86 - V) / 9.03), 2))
