@@ -15,7 +15,7 @@ m, p, x = myokit.load('tentusscher.mmt')
 s = myokit.Simulation(m, p)
 
 # Run simulation
-d = s.run(1000, log_interval=0.005)
+d = s.run(1000, log_interval=0.001)
 
 print(np.shape(d['membrane.V']))
 
