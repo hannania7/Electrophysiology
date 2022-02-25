@@ -1,0 +1,702 @@
+[[model]]
+
+# Initial values
+MP.Vm = -91.4466885079348
+BS.CaMCa = 0.000228581865602447
+BS.TnChCa = 0.110742559707052
+BS.SRCa = 0.00172960014640511
+CN.p_O_NaT = 0.000000706725155695262
+CN.p_I_2_NaT = 0.0117704053067285
+CN.p_I_s_NaT = 0.304002781414015
+CN.p_O_NaL = 0.00000295214591324261
+CN.p_I_1_NaL = 0.00254273877063925
+CN.p_I_2_NaL = 0.0118261382165599
+CN.p_I_s_NaL = 0.303220346353844
+CKR.chi_r_fast = 0.00000486210633393005
+CKR.chi_r_slow = 0.437041249050081
+CKS.para_Xs1 = 0.277482694590328
+CKS.para_Xs2 = 0.000131110342877451
+CKTO.i_fast = 0.999756080468878
+CKTO.i_slow = 0.575995954010486
+CNK.P_7 = 0.0831770174499825
+CNK.P_8_13 = 0.281082409575779
+CNK.P_1_6 = 0.435289193632868
+CNCX.p_E_1_NCX_blk = 0.111872123711613
+CNCX.p_I_1_NCX_blk = 0.203023555446362
+CNCX.p_I_2_NCX_blk = 0.684869019924837
+CNCX.p_E_1_NCX_iz = 0.238718640001014
+CNCX.p_I_1_NCX_iz = 0.13771129457898
+CNCX.p_I_2_NCX_iz = 0.622892868847556
+CARU.Y_ooo = 0.00000172489315884865
+CARU.Y_ooc = 0.00000142034754677507
+CARU.Y_coo = 0.0000138422676498755
+CARU.Y_coc = 0.992110534408681
+CARU.Y_cco = 0.0000000953816272498217
+CARU.Y_oco = 0.00000000000156949238162028
+CARU.Y_occ = 0.0000000249594301562175
+CC.Y_co_iz = 0.992251726297519
+CC.Y_oo_iz = 0.00000314564543512061
+CC.Y_oc_iz = 0.000000024556270151713
+CC.Y_co_blk = 0.992424981547859
+CC.Y_oo_blk = 0.00000314619469048683
+CC.Y_oc_blk = 0.0000000240070147854924
+IC.Ca_2_tot_jnc = 0.207176351449979
+IC.Ca_2_tot_iz = 0.084640522722006
+IC.Ca_2_tot_blk = 0.11279654524634
+IC.Ca_2_SRup = 0.761077662687456
+IC.Ca_2_tot_SRrl = 2.21876221622152
+IC.Nai = 6.66894310282034
+IC.Ki = 139.238265011042
+CT.TSCa_3 = 0.00899891910620064
+CT.TSCa_3W = 0.000369547640656701
+CT.TSCa_3S = 0.000153834503967436
+CT.TS_S = 0.000876347322180234
+CT.TS_W = 0.000492054058977473
+CT.hw = 0.000100147615113241
+CT.hp = 0.00600014761511324
+CK1.Pb_spm = 0.594875991179992
+CKTO.a = 0.000793627635934239
+
+[RTF]
+R = 8.3143
+T = 310
+F = 96.4867
+k_on_CaM = 34
+B_tot_CaM = 0.024
+k_off_CaM = 0.238
+k_on_TnCh = 2.37
+B_tot_TnCh = 0.12
+k_off_TnCh = 0.000032
+k_on_SR = 100
+B_tot_SR = 0.0171
+k_off_SR = 0.06
+L_bound_iz = 0.0075621764602356
+B_tot_L_iz = 0.6078
+k_off_L_iz = 1.3
+k_on_L_iz = 100
+H_bound_iz = 0.0769149150028914
+B_tot_H_iz = 0.2178
+k_off_H_iz = 0.03
+k_on_H_iz = 100
+B_tot_L_jnc = 1.1095
+Ca_2_jnc = 0
+k_off_L_jnc = 1.3
+k_on_L_jnc = 100
+B_tot_H_jnc = 0.398
+k_off_H_jnc = 0.03
+k_on_H_jnc = 100
+B_tot_CSQN = 3
+k_off_CSQN = 65
+k_on_CSQN = 100
+G_dCa_jnciz = 3395.88
+Sc_Cell = 1
+G_dCa_izblk = 3507.78
+P_trans = 4.8037
+T_L = 147.51
+K_L = 0.0044
+ATP = 6
+P_CaL_Ca = 14.21
+Cao = 1.8
+Nao = 140
+Ko = 4.5
+f_CaL_blk = 0.1
+f_CaL_iz = 0.15
+f_CaL_jnc = 0.75
+k_I2O = 0.0001312
+k_I1I2 = 0.00534
+k_I1O = 0.01
+f_LSM = 0.13125
+P_Na = 8.1072
+Mg_2_cyt = 0.8
+SPM = 5.0
+G_K1 = 1.353
+f_mode1 = 0.9
+G_Kr = 0.0166
+f_Ks_iz = 0.1
+f_Ks_blk = 0.9
+P_Ks_K = 0.002782
+G_Kto = 0.0312
+P_Kpl = 0.0000172
+f_Cab_blk = 0.9
+P_Cab = 0.00006822
+f_Cab_iz = 0.1
+P_bNSC_K = 0.00014
+P_bNSC_Na = 0.00035
+f_l_Ca_blk = 0.9
+P_l_Ca_Na = 0.00273
+f_l_Ca_iz = 0.1
+ATP_cyt = 6.67701543987464
+G_KATP = 17.674
+delta_Nai = -0.14
+K_d_Nai_0 = 5
+delta_Nao = 0.44
+K_d_Nao_0 = 26.8
+delta_Ki = -0.14
+K_d_Ki_0 = 18.8
+delta_Ko = 0.23
+K_d_Ko_0 = 0.8
+K_d_MgATP = 0.6
+MgATP_cyt = 6.631643709767415
+k_1_plus = 0.72
+k_1_minus = 0.08
+k_2_plus = 0.08
+k_2_minus = 0.008
+k_3_plus = 4
+k_3_minus = 8000
+k_4_plus = 0.3
+k_4_minus = 0.2
+Pi = 0.50872066859173026
+H = 0.0001
+Amp_NaK = 25.178
+Stoi_NaK_Na = 3
+Stoi_NaK_K = -2
+K_m_act = 0.004
+alpha_1_on = 0.002
+alpha_1_off = 0.0015
+alpha_2_on = 0.00006
+alpha_2_off = 0.02
+beta_1_on = 0.0012
+beta_1_off = 0.0000005
+beta_2_on = 0.18
+beta_2_off = 0.0002
+K_m_Nai = 20.74854
+K_m_Nao = 87.5
+K_m_Cai = 0.0184
+K_m_Cao = 1.38
+k_3 = 1.0
+k_4 = 1.0
+Amp_NCX = 30.53
+f_NCX_blk = 0.9
+f_NCX_iz = 0.1
+K_m = 0.0005
+Amp_PMCA = 0.19
+f_PMCA_blk = 0.9
+f_PMCA_iz = 0.1
+J_L = 0.000913
+J_R = 0.02
+g_D = 0.065
+Q_10 = 3
+sloc0 = 0.1
+f_n = 7
+N_RyR = 10
+p_O_RyR_base = 0.000075
+P_RyR = 5191
+K_dCai = 0.0027
+K_dCasr = 1.378
+MgADP_cyt = 0.025978226605534577
+Amp_SERCA = 106.4448
+I_Kto_Na = 0
+I_app = 0
+halfSL = 0.91
+TS_tot = 23
+propFh = 28000
+Za = 0.0023
+Yv = 1.5
+Yd = 0.0333
+Yc = 1
+Lc = 1.2
+Zb = 0.1397
+Yb = 0.1816
+rate_f = 0.0023
+convertF = 15
+eqvhalfSL = 1.15
+Zp = 0.2095
+Yp = 0.1397
+Zr = 7.2626
+Yr = 0.1397
+Zq = 0.3724
+Yq = 0.2328
+hwr = 0.0001
+rate_B = 0.5
+hpr = 0.006
+dt = 0.01
+
+# Engine variables
+#
+[engine]
+time = 0 in [ms] bind time
+pace = 0 bind pace
+
+[stimulus]
+i_stim = engine.pace * amplitude
+amplitude = -12 [pA/pF]
+
+[MP]
+I_tot_K = (CC.I_CaL_K_jnc + CC.I_CaL_K_iz + CC.I_CaL_K_blk) + CN.I_NaT_K + CN.I_NaL_K + CK1.I_K1 + CKR.I_Kr + (CKS.I_Ks_K_iz + CKS.I_Ks_K_blk) + CKTO.I_Kto + CKPL.I_Kpl + CNK.I_NaK_K + CKATP.I_KATP + CBNSC.I_bNSC_K + (CICA.I_l_Ca_K_iz + CICA.I_l_Ca_K_blk)
+I_tot_Na = (CC.I_CaL_Na_jnc + CC.I_CaL_Na_iz + CC.I_CaL_Na_blk) + (CNCX.I_NCX_Na_iz + CNCX.I_NCX_Na_blk) + (CKS.I_Ks_Na_iz + CKS.I_Ks_Na_blk) + CN.I_NaT_Na + CN.I_NaL_Na + CNK.I_NaK_Na + RTF.I_Kto_Na + CBNSC.I_bNSC_Na + (CICA.I_l_Ca_Na_iz + CICA.I_l_Ca_Na_blk)
+I_tot_Ca_blk = CC.I_CaL_Ca_blk + CPMCA.I_PMCA_blk + CNCX.I_NCX_Ca_blk + CCAB.I_Cab_blk
+I_tot_Ca_iz = CC.I_CaL_Ca_iz + CPMCA.I_PMCA_iz + CNCX.I_NCX_Ca_iz + CCAB.I_Cab_iz
+I_tot_Ca_jnc = CC.I_CaL_Ca_LR + CC.I_CaL_Ca_L0
+I_tot_Ca = MP.I_tot_Ca_jnc + MP.I_tot_Ca_iz + MP.I_tot_Ca_blk
+I_tot_cell = MP.I_tot_Na + I_tot_Ca + MP.I_tot_K
+dot(Vm) = -(I_tot_cell + stimulus.i_stim)
+
+[CT]
+TS = RTF.TS_tot - TSCa_3 - TSCa_3W - TSCa_3S - TS_S - TS_W
+rate_g = RTF.Za + RTF.Yv * (1 - exp(-RTF.propFh * (hw - RTF.hwr)^2))
+rate_gd = RTF.Yd + RTF.Yc * (RTF.halfSL - RTF.Lc)^2 + OTHER.Yvd * (1 - exp(-RTF.propFh * (hw - RTF.hwr)^2))
+dot(TSCa_3) = RTF.Yb * TS * (BS.Ca_2_blk * 1000)^3 - RTF.Zb * TSCa_3 + rate_g * TSCa_3W - RTF.rate_f * exp(-RTF.convertF * (RTF.halfSL - RTF.eqvhalfSL)^2) * TSCa_3
+dot(TSCa_3W) = RTF.rate_f * exp(-RTF.convertF * (RTF.halfSL - RTF.eqvhalfSL)^2) * TSCa_3 - rate_g * TSCa_3W + RTF.Zp * TSCa_3S - RTF.Yp * TSCa_3W
+dot(TSCa_3S) = RTF.Yp * TSCa_3W - RTF.Zp * TSCa_3S + RTF.Zr * TS_S * (BS.Ca_2_blk * 1000)^3 - RTF.Yr * TSCa_3S
+dot(TS_S) = RTF.Yr * TSCa_3S - RTF.Zr * TS_S * (BS.Ca_2_blk * 1000)^3 + RTF.Zq * TS_W - RTF.Yq * TS_S
+dot(TS_W) = RTF.Yq * TS_S - RTF.Zq * TS_W - rate_gd * TS_W
+dot(hw) = -RTF.rate_B * (hw - RTF.hwr)
+dot(hp) = -RTF.rate_B * (hp - RTF.hpr)
+
+
+[IC]
+dot(Ca_2_tot_jnc) = -MP.I_tot_Ca_jnc * OTHER.Cm / (OTHER.V_jnc * 2 * RTF.F) + CARU.J_Ca_rel / OTHER.V_jnc - BD.J_Ca_jnciz / OTHER.V_jnc
+dot(Ca_2_tot_iz) = -MP.I_tot_Ca_iz * OTHER.Cm / (OTHER.V_iz * 2 * RTF.F) + BD.J_Ca_jnciz / OTHER.V_iz - BD.J_Ca_izblk / OTHER.V_iz
+dot(Ca_2_tot_blk) = -MP.I_tot_Ca_blk * OTHER.Cm / (OTHER.V_blk * 2 * RTF.F) - SERCA.J_SERCA / OTHER.V_blk + BD.J_Ca_izblk / OTHER.V_blk
+dot(Ca_2_SRup) = SERCA.J_SERCA / OTHER.V_SRup - BD.J_trans_SR / OTHER.V_SRup
+dot(Ca_2_tot_SRrl) = BD.J_trans_SR / OTHER.V_SRrl - CARU.J_Ca_rel / OTHER.V_SRrl
+dot(Nai) = -MP.I_tot_Na * OTHER.Cm / (OTHER.V_cyt * RTF.F)
+dot(Ki) = -(MP.I_tot_K + RTF.I_app) * OTHER.Cm / (OTHER.V_cyt * RTF.F)
+
+
+[SERCA]
+alpha_1 = 25900 * RTF.MgATP_cyt
+alpha_2 = 2540 / (1 + (RTF.K_dCai / BS.Ca_2_blk)^1.7)
+alpha_3 = 5.35 / (1 + (IC.Ca_2_SRup / RTF.K_dCasr)^1.7)
+beta_1 = 0.1972 / (1 + (BS.Ca_2_blk / RTF.K_dCai)^1.7)
+beta_2 = 25435 * RTF.MgADP_cyt / (1 + (RTF.K_dCasr / IC.Ca_2_SRup)^1.7)
+beta_3 = 149 * RTF.Pi
+v_cyc = 6.86 * (alpha_1 * alpha_2 * alpha_3 - beta_1 * beta_2 * beta_3) / (alpha_2 * alpha_3 + beta_1 * alpha_3 + beta_1 * beta_2 + alpha_1 * alpha_3 + beta_2 * alpha_1 + beta_2 * beta_3 + alpha_1 * alpha_2 + beta_3 * beta_1 + beta_3 * alpha_2)
+J_SERCA = RTF.Amp_SERCA * v_cyc / (2 * RTF.F) * RTF.Sc_Cell
+
+
+[CARU]
+use MP.Vm
+p_O_RyR = Y_ooo + Y_coo + Y_cco + Y_oco
+p_O_RyR_t = p_O_RyR + RTF.p_O_RyR_base
+
+J_Ca_rel = RTF.P_RyR * p_O_RyR_t * (ROSR.Ca_2_SRrl - JS.Ca_2_jnc10) * RTF.Sc_Cell
+
+Ca_2_nd_00 = JS.Ca_2_jnc10
+Ca_2_nd_L0 = (Ca_2_nd_00 + OTHER.f_L * OTHER.delta_RTF * Vm * exp(-OTHER.delta_RTF * Vm) / (1 - exp(-OTHER.delta_RTF * Vm)) * RTF.Cao) / (1 + OTHER.f_L * OTHER.delta_RTF * Vm / (1 - exp(-OTHER.delta_RTF * Vm)))
+Ca_2_nd_0R = (Ca_2_nd_00 + OTHER.f_R * ROSR.Ca_2_SRrl) / (1 + OTHER.f_R)
+Ca_2_nd_LR = (Ca_2_nd_00 + OTHER.f_R * ROSR.Ca_2_SRrl + OTHER.f_L * OTHER.delta_RTF * Vm * exp(-OTHER.delta_RTF * Vm) / (1 - exp(-OTHER.delta_RTF * Vm)) * RTF.Cao) / (1 + OTHER.f_R + OTHER.f_L * OTHER.delta_RTF * Vm / (1 - exp(-OTHER.delta_RTF * Vm)))
+
+epsilon_plus_00 = (Ca_2_nd_00 * CC.alpha_plus) / (RTF.T_L * RTF.K_L)
+epsilon_plus_L0 = (Ca_2_nd_L0 * CC.alpha_plus) / (RTF.T_L * RTF.K_L)
+epsilon_plus_0R = (Ca_2_nd_0R * CC.alpha_plus) / (RTF.T_L * RTF.K_L)
+epsilon_plus_LR = (Ca_2_nd_LR * CC.alpha_plus) / (RTF.T_L * RTF.K_L)
+
+k_co_00 = RTF.Q_10 * 0.4 / (1 + (0.025 / Ca_2_nd_00)^2.7)
+k_co_L0 = RTF.Q_10 * 0.4 / (1 + (0.025 / Ca_2_nd_L0)^2.7)
+k_co_0R = RTF.Q_10 * 0.4 / (1 + (0.025 / Ca_2_nd_0R)^2.7)
+k_co_LR = RTF.Q_10 * 0.4 / (1 + (0.025 / Ca_2_nd_LR)^2.7)
+f_t_00 = k_co_00 / (k_co_00 + OTHER.k_oc)
+f_t_L0 = k_co_L0 / (k_co_L0 + OTHER.k_oc)
+k_rco_0 = RTF.f_n * f_t_00 * k_co_0R * (RTF.sloc0 + ROSR.Ca_2_SRrl)
+k_rco_L = RTF.f_n * f_t_L0 * k_co_LR * (RTF.sloc0 + ROSR.Ca_2_SRrl)
+p_C_0 = OTHER.k_oc / (OTHER.k_oc + f_t_00 * (k_rco_0 / (RTF.f_n * f_t_00)))
+p_C_L = OTHER.k_oc / (OTHER.k_oc + f_t_00 * (k_rco_L / (RTF.f_n * f_t_L0)))
+k_roc_0 = OTHER.k_oc * (p_C_0)^(RTF.N_RyR - 1) * 0.74
+k_roc_L = OTHER.k_oc * (p_C_L)^(RTF.N_RyR - 1) * 0.74
+
+Y_ccc = 1 - (Y_ooo + CARU.Y_ooc + Y_coo + Y_coc + Y_cco + Y_oco + Y_occ)
+dot(Y_ooo) = k_rco_L * CARU.Y_ooc + CC.alpha_plus * Y_coo + CC.epsilon_minus * Y_oco - (k_roc_L + CC.alpha_minus + epsilon_plus_LR) * Y_ooo
+dot(Y_ooc) = CC.alpha_plus * Y_coc + k_roc_L * Y_ooo + CC.epsilon_minus * Y_occ - (CC.alpha_minus + k_rco_L + epsilon_plus_L0) * CARU.Y_ooc
+dot(Y_coo) = k_rco_0 * Y_coc + CC.alpha_minus * Y_ooo + CC.epsilon_minus * Y_cco - (k_roc_0 + CC.alpha_plus + epsilon_plus_0R) * Y_coo
+dot(Y_coc) = k_roc_0 * Y_coo + CC.alpha_minus * CARU.Y_ooc + CC.epsilon_minus * Y_ccc - (k_rco_0 + CC.alpha_plus + epsilon_plus_00) * Y_coc
+dot(Y_cco) = k_rco_0 * Y_ccc + CC.alpha_minus * Y_oco + epsilon_plus_0R * Y_coo - (k_roc_0 + CC.alpha_plus + CC.epsilon_minus) * Y_cco
+dot(Y_oco) = k_rco_0 * Y_occ + CC.alpha_plus * Y_cco + epsilon_plus_LR * Y_ooo - (k_roc_0 + CC.alpha_minus + CC.epsilon_minus) * Y_oco
+dot(Y_occ) = CC.alpha_plus * Y_ccc + k_roc_0 * Y_oco + epsilon_plus_L0 * CARU.Y_ooc - (CC.alpha_minus + k_rco_0 + CC.epsilon_minus) * Y_occ
+
+
+[CPMCA]
+use MP.Vm
+I_PMCA_blk = RTF.f_PMCA_blk * RTF.Amp_PMCA * (BS.Ca_2_blk)^1.6 / ((RTF.K_m)^1.6 + (BS.Ca_2_blk)^1.6)
+I_PMCA_iz = RTF.f_PMCA_iz * RTF.Amp_PMCA * (IDZ.Ca_2_iz10)^1.6 / ((RTF.K_m)^1.6 + (IDZ.Ca_2_iz10)^1.6)
+I_PMCA = I_PMCA_iz + I_PMCA_blk
+
+
+[CNCX]
+use MP.Vm
+f_Caina_blk = BS.Ca_2_blk / (BS.Ca_2_blk + RTF.K_m_act)
+f_Caina_iz = IDZ.Ca_2_iz10 / (IDZ.Ca_2_iz10 + RTF.K_m_act)
+q_blk_E_1_Na = 1.0 / (1.0 + (RTF.K_m_Nai / IC.Nai)^3 * (1.0 + BS.Ca_2_blk / RTF.K_m_Cai))
+q_iz_E_1_Na = 1.0 / (1.0 + (RTF.K_m_Nai / IC.Nai)^3 * (1.0 + IDZ.Ca_2_iz10 / RTF.K_m_Cai))
+q_blk_E_1_Ca = 1.0 / (1.0 + RTF.K_m_Cai / BS.Ca_2_blk * (1.0 + (IC.Nai / RTF.K_m_Nai)^3))
+q_iz_E_1_Ca = 1.0 / (1.0 + RTF.K_m_Cai / IDZ.Ca_2_iz10 * (1.0 + (IC.Nai / RTF.K_m_Nai)^3))
+q_E_2_Na = 1.0 / (1.0 + (RTF.K_m_Nao / RTF.Nao)^3 * (1.0 + RTF.Cao / RTF.K_m_Cao))
+q_E_2_Ca = 1.0 / (1.0 + RTF.K_m_Cao / RTF.Cao * (1.0 + (RTF.Nao / RTF.K_m_Nao)^3))
+alpha_1_blk = q_blk_E_1_Na * (f_Caina_blk * RTF.alpha_1_on + (1 - f_Caina_blk) * RTF.alpha_1_off)
+alpha_1_iz = q_iz_E_1_Na * (f_Caina_iz * RTF.alpha_1_on + (1 - f_Caina_iz) * RTF.alpha_1_off)
+beta_1_blk = f_Caina_blk * RTF.beta_1_on + (1 - f_Caina_blk) * RTF.beta_1_off
+beta_1_iz = f_Caina_iz * RTF.beta_1_on + (1 - f_Caina_iz) * RTF.beta_1_off
+alpha_2_blk = f_Caina_blk * RTF.alpha_2_on + (1 - f_Caina_blk) * RTF.alpha_2_off
+alpha_2_iz = f_Caina_iz * RTF.alpha_2_on + (1 - f_Caina_iz) * RTF.alpha_2_off
+beta_2_blk = f_Caina_blk * RTF.beta_2_on + (1 - f_Caina_blk) * RTF.beta_2_off
+beta_2_iz = f_Caina_iz * RTF.beta_2_on + (1 - f_Caina_iz) * RTF.beta_2_off
+k_1 = exp((0.32 * RTF.F * Vm) / (RTF.R * RTF.T))
+k_2 = exp(((0.32 - 1) * RTF.F * Vm) / (RTF.R * RTF.T))
+alpha_E = k_2 * q_E_2_Na + RTF.k_4 * q_E_2_Ca
+beta_E_blk = k_1 * q_blk_E_1_Na + RTF.k_3 * q_blk_E_1_Ca
+beta_E_iz = k_1 * q_iz_E_1_Na + RTF.k_3 * q_iz_E_1_Ca
+p_E_2_NCX_blk = 1 - p_E_1_NCX_blk - p_I_1_NCX_blk - p_I_2_NCX_blk
+p_E_2_NCX_iz = 1 - p_E_1_NCX_iz - p_I_1_NCX_iz - p_I_2_NCX_iz
+v_cyc_NCX_blk = k_1 * q_blk_E_1_Na * p_E_1_NCX_blk - k_2 * q_E_2_Na * p_E_2_NCX_blk
+v_cyc_NCX_iz = k_1 * q_iz_E_1_Na * p_E_1_NCX_iz - k_2 * q_E_2_Na * p_E_2_NCX_iz
+dot(p_E_1_NCX_blk) = p_E_2_NCX_blk * alpha_E + p_I_1_NCX_blk * beta_1_blk + p_I_2_NCX_blk * beta_2_blk - p_E_1_NCX_blk * (beta_E_blk + alpha_1_blk + alpha_2_blk)
+dot(p_I_1_NCX_blk) = p_E_1_NCX_blk * alpha_1_blk - p_I_1_NCX_blk * beta_1_blk
+dot(p_I_2_NCX_blk) = p_E_1_NCX_blk * alpha_2_blk - p_I_2_NCX_blk * beta_2_blk
+dot(p_E_1_NCX_iz) = p_E_2_NCX_iz * alpha_E + p_I_1_NCX_iz * beta_1_iz + p_I_2_NCX_iz * beta_2_iz - p_E_1_NCX_iz * (beta_E_iz + alpha_1_iz + alpha_2_iz)
+dot(p_I_1_NCX_iz) = p_E_1_NCX_iz * alpha_1_iz - p_I_1_NCX_iz * beta_1_iz
+dot(p_I_2_NCX_iz) = p_E_1_NCX_iz * alpha_2_iz - p_I_2_NCX_iz * beta_2_iz
+I_NCX_blk = RTF.f_NCX_blk * RTF.Amp_NCX * v_cyc_NCX_blk
+I_NCX_iz = RTF.f_NCX_iz * RTF.Amp_NCX * v_cyc_NCX_iz
+I_NCX = I_NCX_iz + I_NCX_blk
+I_NCX_Na_blk = 3 * I_NCX_blk
+I_NCX_Na_iz = 3 * I_NCX_iz
+I_NCX_Ca_blk = -2 * I_NCX_blk
+I_NCX_Ca_iz = -2 * I_NCX_iz
+
+
+[CNK]
+use MP.Vm
+K_d_Nai = RTF.K_d_Nai_0 * exp((RTF.delta_Nai * RTF.F * Vm) / (RTF.R * RTF.T))
+K_d_Nao = RTF.K_d_Nao_0 * exp((RTF.delta_Nao * RTF.F * Vm) / (RTF.R * RTF.T))
+K_d_Ki = RTF.K_d_Ki_0 * exp((RTF.delta_Ki * RTF.F * Vm) / (RTF.R * RTF.T))
+K_d_Ko = RTF.K_d_Ko_0 * exp((RTF.delta_Ko * RTF.F * Vm) / (RTF.R * RTF.T))
+Nai_bar = IC.Nai / K_d_Nai
+Nao_bar = RTF.Nao / K_d_Nao
+Ki_bar = IC.Ki / K_d_Ki
+Ko_bar = RTF.Ko / K_d_Ko
+MgATP_bar = RTF.MgATP_cyt / RTF.K_d_MgATP
+alpha_1_plus = RTF.k_1_plus * (Nai_bar)^3 / ((1 + Nai_bar)^3 + (1 + Ki_bar)^2 - 1)
+alpha_3_plus = RTF.k_3_plus * (Ko_bar)^2 / ((1 + Nao_bar)^3 + (1 + Ko_bar)^2 - 1)
+alpha_4_plus = RTF.k_4_plus * MgATP_bar / (1 + MgATP_bar)
+alpha_1_minus = RTF.k_1_minus * RTF.MgADP_cyt
+alpha_2_minus = RTF.k_2_minus * (Nao_bar)^3 / ((1 + Nao_bar)^3 + (1 + Ko_bar)^2 - 1)
+alpha_3_minus = RTF.k_3_minus * RTF.Pi * RTF.H / (1 + MgATP_bar)
+alpha_4_minus = RTF.k_4_minus * (Ki_bar)^2 / ((1 + Nai_bar)^3 + (1 + Ki_bar)^2 - 1)
+P_14_15 = 1 - P_1_6 - P_7 - P_8_13
+V_step1 = alpha_1_plus * P_1_6 - alpha_1_minus * P_7
+V_step2 = OTHER.alpha_2_plus * P_7 - alpha_2_minus * P_8_13
+V_step3 = alpha_3_plus * P_8_13 - alpha_3_minus * P_14_15
+V_step4 = alpha_4_plus * P_14_15 - alpha_4_minus * P_1_6
+v_cyc_NaK = V_step2
+dot(P_1_6) = -alpha_1_plus * P_1_6 + alpha_1_minus * P_7 + alpha_4_plus * P_14_15 - alpha_4_minus * P_1_6
+dot(P_7) = -OTHER.alpha_2_plus * P_7 + alpha_2_minus * P_8_13 + alpha_1_plus * P_1_6 - alpha_1_minus * P_7
+dot(P_8_13) = -alpha_3_plus * P_8_13 + alpha_3_minus * P_14_15 + OTHER.alpha_2_plus * P_7 - alpha_2_minus * P_8_13
+I_NaK = RTF.Amp_NaK * v_cyc_NaK
+I_NaK_Na = RTF.Stoi_NaK_Na * I_NaK
+I_NaK_K = RTF.Stoi_NaK_K * I_NaK
+
+
+[CKATP]
+use MP.Vm
+p_O_KATP = 0.8 / (1.0 + (RTF.ATP_cyt / 0.1)^2)
+chi_KATP = 0.0236 * (RTF.Ko)^0.24
+I_KATP = RTF.G_KATP * (Vm - CC.E_K) * p_O_KATP * chi_KATP
+
+
+[CICA]
+use MP.Vm
+p_O_blk = 1.0 / (1.0 + (0.0012 / BS.Ca_2_blk)^3)
+p_O_iz = 1.0 / (1.0 + (0.0012 / IDZ.Ca_2_iz10)^3)
+I_l_Ca_Na_blk = RTF.P_l_Ca_Na * RTF.f_l_Ca_blk * CC.GHK_Na * p_O_blk
+I_l_Ca_Na_iz = RTF.P_l_Ca_Na * RTF.f_l_Ca_iz * CC.GHK_Na * p_O_iz
+I_l_Ca_K_blk = OTHER.P_l_Ca_K * RTF.f_l_Ca_blk * CC.GHK_K * p_O_blk
+I_l_Ca_K_iz = OTHER.P_l_Ca_K * RTF.f_l_Ca_iz * CC.GHK_K * p_O_iz
+I_l_Ca = I_l_Ca_Na_iz + CICA.I_l_Ca_K_iz + I_l_Ca_Na_blk + CICA.I_l_Ca_K_blk
+
+
+[CBNSC]
+I_bNSC_K = RTF.P_bNSC_K * CC.GHK_K
+I_bNSC_Na = RTF.P_bNSC_Na * CC.GHK_Na
+I_bNSC = I_bNSC_K + I_bNSC_Na
+
+
+[CCAB]
+I_Cab_blk = RTF.P_Cab * RTF.f_Cab_blk * CC.GHK_Ca_blk
+I_Cab_iz = RTF.P_Cab * RTF.f_Cab_iz * CC.GHK_Ca_iz
+I_Cab = I_Cab_iz + I_Cab_blk
+
+
+[CKPL]
+use MP.Vm
+p_O_Kpl = Vm / (1 - exp(-Vm / 13.0))
+chi_Kpl = (RTF.Ko / 5.4)^0.16
+I_Kpl = RTF.P_Kpl * chi_Kpl * p_O_Kpl * CC.GHK_K
+
+
+[CKTO]
+use MP.Vm
+a_infinity = 1 / (1 + exp(-(Vm - 14.34) / 14.82))
+tau_a = 1.0515 / (1 / (1.2089 * (1 + exp(-(Vm - 18.41) / 29.38))) + 3.5 / (1 + exp((Vm + 100) / 29.38)))
+dot(a) = (a_infinity - a) / tau_a
+i_infinity = 1 / (1 + exp((Vm + 43.94) / 5.711))
+tau_i_fast = 4.562 + 1 / (0.3933 * exp(-(Vm + 100) / 100) + 0.08004 * exp((Vm + 50) / 16.59))
+tau_i_slow = 23.62 + 1 / (0.001416 * exp(-(Vm + 96.52) / 59.05) + 0.000000017808 * exp((Vm + 114.1) / 8.079))
+A_i_fast = 1 / (1 + exp((Vm - 213.6) / 151.2))
+A_i_slow = 1 - A_i_fast
+dot(i_fast) = (i_infinity - i_fast) / tau_i_fast
+dot(i_slow) = (i_infinity - i_slow) / tau_i_slow
+i = A_i_fast * i_fast + A_i_slow * i_slow
+p_O_Kto = a * i
+I_Kto = RTF.G_Kto * p_O_Kto * (Vm - CC.E_K)
+
+
+[CKS]
+use MP.Vm
+para_Xs1_infinity = 1 / (1 + exp(-(Vm + 11.60) / 8.932))
+tau_Xs1 = 817.3 + 1 / (0.0002326 * exp((Vm + 48.28) / 17.80) + 0.001292 * exp(-(Vm + 210.0) / 230.0))
+dot(para_Xs1) = (para_Xs1_infinity - para_Xs1) / tau_Xs1
+para_Xs2_infinity = para_Xs1_infinity
+tau_Xs2 = 1 / (0.01 * exp((Vm - 50) / 20) + 0.0193 * exp(-(Vm + 66.54) / 31))
+dot(para_Xs2) = (para_Xs2_infinity - para_Xs2) / tau_Xs2
+para_RKs_blk = 1 + 0.6 / (1 + (0.000038 / BS.Ca_2_blk)^1.4)
+para_RKs_iz = 1 + 0.6 / (1 + (0.000038 / IDZ.Ca_2_iz10)^1.4)
+p_O_Ks_blk = para_Xs1 * para_Xs2 * para_RKs_blk
+p_O_Ks_iz = para_Xs1 * para_Xs2 * para_RKs_iz
+I_Ks_K_blk = RTF.f_Ks_blk * RTF.P_Ks_K * CC.GHK_K * p_O_Ks_blk
+I_Ks_K_iz = RTF.f_Ks_iz * RTF.P_Ks_K * CC.GHK_K * p_O_Ks_iz
+I_Ks_Na_blk = RTF.f_Ks_blk * OTHER.P_Ks_Na * CC.GHK_Na * p_O_Ks_blk
+I_Ks_Na_iz = RTF.f_Ks_iz * OTHER.P_Ks_Na * CC.GHK_Na * p_O_Ks_iz
+I_Ks = I_Ks_K_blk + I_Ks_K_iz + I_Ks_Na_blk + I_Ks_Na_iz
+
+
+[CKR]
+use MP.Vm
+chi_r_infinity = 1 / (1 + exp(-(Vm + 8.337) / 6.789))
+tau_chi_r_fast = 12.98 + 1 / (0.3652 * exp((Vm - 31.66) / 3.869) + 0.00004123 * exp(-(Vm - 47.78) / 20.38))
+tau_chi_r_slow = 1.865 + 1 / (0.06629 * exp((Vm - 34.70) / 7.355) + 0.00001128 * exp(-(Vm - 19.74) / 25.94))
+A_chi_r_fast = 1 / (1 + exp((Vm + 4.81) / 38.21))
+A_chi_r_slow = 1 - A_chi_r_fast
+dot(chi_r_fast) = (chi_r_infinity - chi_r_fast) / tau_chi_r_fast
+dot(chi_r_slow) = (chi_r_infinity - chi_r_slow) / tau_chi_r_slow
+chi_r = A_chi_r_fast * chi_r_fast + A_chi_r_slow * chi_r_slow
+R_Kr = 1 / ((1 + exp((Vm + 55) / 75)) * (1 + exp((Vm - 10) / 30)))
+p_O_Kr = chi_r * R_Kr
+chi_Kr = sqrt(RTF.Ko / 4.5)
+I_Kr = RTF.G_Kr * chi_Kr * (Vm - CC.E_K) * p_O_Kr
+
+
+[CK1]
+use MP.Vm
+alpha_Mg = 12.0 * exp(-0.025 * (Vm - CC.E_K))
+beta_Mg = 28 * RTF.Mg_2_cyt * exp(0.025 * (Vm - CC.E_K))
+f_O = alpha_Mg / (alpha_Mg + beta_Mg)
+f_B = beta_Mg / (alpha_Mg + beta_Mg)
+po_Mg = f_O * f_O * f_O
+po_Mg1 = 3.0 * f_O * f_O * f_B
+po_Mg2 = 3.0 * f_O * f_B * f_B
+alpha_SPM = 0.17 * exp(-0.07 * (Vm - CC.E_K + 8 * RTF.Mg_2_cyt)) / (1.0 + 0.01 * exp(0.12 * (Vm - CC.E_K + 8 * RTF.Mg_2_cyt)))
+beta_SPM = 0.28 * RTF.SPM * exp(0.15 * (Vm - CC.E_K + 8 * RTF.Mg_2_cyt)) / (1.0 + 0.01 * exp(0.13 * (Vm - CC.E_K + 8 * RTF.Mg_2_cyt)))
+
+dot(Pb_spm) = beta_SPM * po_Mg * (1 - Pb_spm) - alpha_SPM * Pb_spm
+po_mode1 = RTF.f_mode1 * (1 - Pb_spm) * (po_Mg + (2.0 / 3.0) * po_Mg1 + (1.0 / 3.0) * po_Mg2)
+po_mode2 = (1 - RTF.f_mode1) / (1.0 + RTF.SPM / (40.0 * exp(-(Vm - CC.E_K) / 9.1)))
+p_O_K1 = po_mode1 + po_mode2
+chi_K1 = (RTF.Ko / 4.5)^0.4 / (1.0 + exp(-(RTF.Ko - 2.2) / 0.6))
+I_K1 = RTF.G_K1 * chi_K1 * (Vm - CC.E_K) * p_O_K1
+
+
+[CN]
+use MP.Vm
+f_C_Na = 1 / (1 + exp(-(Vm + 48) / 7))
+k_C2O = 1 / (0.0025 * exp(Vm / -8.0) + 0.15 * exp(Vm / -100.0))
+k_OC = 1 / (30 * exp(Vm / 12.0) + 0.53 * exp(Vm / 50.0))
+k_OI2 = 1 / (0.0433 * exp(Vm / -27.0) + 0.34 * exp(Vm / -2000.0))
+k_C2I2 = 0.5 / (1.0 + (RTF.k_I2O * k_OC) / (k_OI2 * k_C2O))
+k_I2C = 0.5 - k_C2I2
+k_Isb = 1 / (300000.0 * exp(Vm / 10.0) + 50000 * exp(Vm / 16.0))
+k_Isf = 1 / (0.016 * exp(Vm / -9.9) + 8.0 * exp(Vm / -45.0))
+k_OI1 = k_OI2
+k_I1C = k_I2C
+k_C2I1 = k_C2I2
+p_C_NaT = 1.0 - p_I_2_NaT - p_I_s_NaT - p_O_NaT
+dot(p_O_NaT) = RTF.k_I2O * p_I_2_NaT + f_C_Na * k_C2O * p_C_NaT - (k_OC + k_OI2) * p_O_NaT
+dot(p_I_2_NaT) = f_C_Na * k_C2I2 * p_C_NaT + k_OI2 * p_O_NaT + k_Isb * p_I_s_NaT - (k_I2C + RTF.k_I2O + k_Isf) * p_I_2_NaT
+dot(p_I_s_NaT) = k_Isf * p_I_2_NaT + k_Isf * p_C_NaT - 2 * k_Isb * p_I_s_NaT
+p_C_NaL = 1.0 - p_I_2_NaL - p_I_s_NaL - p_I_1_NaL - p_O_NaL
+dot(p_O_NaL) = RTF.k_I1O * p_I_1_NaL + f_C_Na * k_C2O * p_C_NaL - (k_OC + k_OI1) * p_O_NaL
+dot(p_I_1_NaL) = k_OI1 * p_O_NaL + f_C_Na * k_C2I1 * p_C_NaL - (RTF.k_I1O + k_I1C + RTF.k_I1I2) * p_I_1_NaL
+dot(p_I_2_NaL) = f_C_Na * k_C2I2 * p_C_NaL + RTF.k_I1I2 * p_I_1_NaL + k_Isb * p_I_s_NaL - (k_I2C + k_Isf) * p_I_2_NaL
+dot(p_I_s_NaL) = k_Isf * p_I_2_NaL + k_Isf * p_C_NaL - 2 * k_Isb * p_I_s_NaL
+
+I_NaT_Na = (1 - RTF.f_LSM) * RTF.P_Na * CC.GHK_Na * p_O_NaT
+I_NaT_K = (1 - RTF.f_LSM) * RTF.P_Na * 0.1 * CC.GHK_K * p_O_NaT
+I_NaT = CN.I_NaT_Na + CN.I_NaT_K
+I_NaL_Na = RTF.f_LSM * RTF.P_Na * CC.GHK_Na * p_O_NaL
+I_NaL_K = RTF.f_LSM * RTF.P_Na * 0.1 * CC.GHK_K * p_O_NaL
+I_NaL = CN.I_NaL_Na + CN.I_NaL_K
+I_Na = I_NaT + I_NaL
+
+
+[CC]
+use MP.Vm
+alpha_plus = 1 / (3.734 * exp(-Vm / 8.5) + 0.35 * exp(-Vm / 3500))
+alpha_minus = 1 / (4.65 * exp(Vm / 15) + 1.363 * exp(Vm / 100))
+
+epsilon_plus_iz = (IDZ.Ca_2_iz10 * CC.alpha_plus) / (RTF.T_L * RTF.K_L)
+epsilon_plus_blk = (BS.Ca_2_blk * CC.alpha_plus) / (RTF.T_L * RTF.K_L)
+Ca_2_iz_loc = (IDZ.Ca_2_iz10 + OTHER.f_L * OTHER.delta_RTF * Vm * exp(-OTHER.delta_RTF * Vm) / (1 - exp(-OTHER.delta_RTF * Vm)) * RTF.Cao) / (1 + OTHER.f_L * OTHER.delta_RTF * Vm / (1 - exp(-OTHER.delta_RTF * Vm)))
+Ca_2_blk_loc = (BS.Ca_2_blk + OTHER.f_L * (OTHER.delta_RTF * Vm * exp(-OTHER.delta_RTF * Vm)) / (1 - exp(-OTHER.delta_RTF * Vm)) * RTF.Cao) / (1 + OTHER.f_L * OTHER.delta_RTF * Vm / (1 - exp(-OTHER.delta_RTF * Vm)))
+epsilon_plus_iz_loc = (CC.Ca_2_iz_loc * CC.alpha_plus) / (RTF.T_L * RTF.K_L)
+epsilon_plus_blk_loc = (CC.Ca_2_blk_loc * CC.alpha_plus) / (RTF.T_L * RTF.K_L)
+epsilon_minus = 1 / (8084 * exp(Vm / 10) + 158 * exp(Vm / 1000)) + 1 / (134736 * exp(-Vm / 5) + 337 * exp(-Vm / 2000))
+
+p_O_LCC = CARU.Y_ooo + CARU.Y_ooc
+
+ATPfactor = 1 / (1 + (1.4 / RTF.ATP)^3)
+
+E_Ca_jnc = (RTF.R * RTF.T / RTF.F) / 2 * log(RTF.Cao / CARU.Ca_2_nd_L0)
+E_Ca_blk = (RTF.R * RTF.T / RTF.F) / 2 * log(RTF.Cao / BS.Ca_2_blk)
+E_Ca_iz = (RTF.R * RTF.T / RTF.F) / 2 * log(RTF.Cao / IDZ.Ca_2_iz10)
+E_K = (RTF.R * RTF.T / RTF.F) / 1 * log(RTF.Ko / IC.Ki)
+E_Na = (RTF.R * RTF.T / RTF.F) / 1 * log(RTF.Nao / IC.Nai)
+
+GHK_Ca_LR = 2 * Vm / (RTF.R * RTF.T / RTF.F) * (CARU.Ca_2_nd_LR - RTF.Cao * exp(-2 * Vm / (RTF.R * RTF.T / RTF.F))) / (1 - exp(-2 * Vm / (RTF.R * RTF.T / RTF.F)))
+GHK_Ca_L0 = 2 * Vm / (RTF.R * RTF.T / RTF.F) * (CARU.Ca_2_nd_L0 - RTF.Cao * exp(-2 * Vm / (RTF.R * RTF.T / RTF.F))) / (1 - exp(-2 * Vm / (RTF.R * RTF.T / RTF.F)))
+GHK_Ca_iz = 2 * Vm / (RTF.R * RTF.T / RTF.F) * (IDZ.Ca_2_iz10 - RTF.Cao * exp(-2 * Vm / (RTF.R * RTF.T / RTF.F))) / (1 - exp(-2 * Vm / (RTF.R * RTF.T / RTF.F)))
+GHK_Ca_blk = 2 * Vm / (RTF.R * RTF.T / RTF.F) * (BS.Ca_2_blk - RTF.Cao * exp(-2 * Vm / (RTF.R * RTF.T / RTF.F))) / (1 - exp(-2 * Vm / (RTF.R * RTF.T / RTF.F)))
+GHK_Na = 1 * Vm / (RTF.R * RTF.T / RTF.F) * (IC.Nai - RTF.Nao * exp(-1 * Vm / (RTF.R * RTF.T / RTF.F))) / (1 - exp(-1 * Vm / (RTF.R * RTF.T / RTF.F)))
+GHK_K = 1 * Vm / (RTF.R * RTF.T / RTF.F) * (IC.Ki - RTF.Ko * exp(-1 * Vm / (RTF.R * RTF.T / RTF.F))) / (1 - exp(-1 * Vm / (RTF.R * RTF.T / RTF.F)))
+
+I_CaL_Ca_blk = RTF.f_CaL_blk * RTF.P_CaL_Ca * GHK_Ca_blk * Y_oo_blk * ATPfactor
+I_CaL_Ca_iz = RTF.f_CaL_iz * RTF.P_CaL_Ca * GHK_Ca_iz * Y_oo_iz * ATPfactor
+I_CaL_Ca_LR = RTF.f_CaL_jnc * RTF.P_CaL_Ca * GHK_Ca_LR * CARU.Y_ooo * ATPfactor
+I_CaL_Ca_L0 = RTF.f_CaL_jnc * RTF.P_CaL_Ca * GHK_Ca_L0 * CARU.Y_ooc * ATPfactor
+I_CaL_Na_blk = RTF.f_CaL_blk * OTHER.P_CaL_Na * CC.GHK_Na * Y_oo_blk * ATPfactor
+I_CaL_Na_iz = RTF.f_CaL_iz * OTHER.P_CaL_Na * CC.GHK_Na * Y_oo_iz * ATPfactor
+I_CaL_Na_jnc = RTF.f_CaL_jnc * OTHER.P_CaL_Na * CC.GHK_Na * p_O_LCC * ATPfactor
+I_CaL_K_blk = RTF.f_CaL_blk * OTHER.P_CaL_K * CC.GHK_K * Y_oo_blk * ATPfactor
+I_CaL_K_iz = RTF.f_CaL_iz * OTHER.P_CaL_K * CC.GHK_K * Y_oo_iz * ATPfactor
+I_CaL_K_jnc = RTF.f_CaL_jnc * OTHER.P_CaL_K * CC.GHK_K * p_O_LCC * ATPfactor
+
+I_CaL = (CC.I_CaL_Ca_LR + CC.I_CaL_Ca_L0 + CC.I_CaL_Na_jnc + CC.I_CaL_K_jnc) + (CC.I_CaL_Ca_iz + CC.I_CaL_Na_iz + CC.I_CaL_K_iz) + (CC.I_CaL_Ca_blk + CC.I_CaL_Na_blk + CC.I_CaL_K_blk)
+
+Y_cc_iz = 1 - (Y_co_iz + Y_oo_iz + Y_oc_iz)
+dot(Y_co_iz) = CC.epsilon_minus * Y_cc_iz + CC.alpha_minus * Y_oo_iz - (CC.epsilon_plus_iz + CC.alpha_plus) * Y_co_iz
+dot(Y_oo_iz) = CC.alpha_plus * Y_co_iz + CC.epsilon_minus * Y_oc_iz - (CC.alpha_minus + CC.epsilon_plus_iz_loc) * Y_oo_iz
+dot(Y_oc_iz) = CC.epsilon_plus_iz_loc * Y_oo_iz + CC.alpha_plus * Y_cc_iz - (CC.epsilon_minus + CC.alpha_minus) * Y_oc_iz
+
+Y_cc_blk = 1 - (Y_co_blk + Y_oo_blk + Y_oc_blk)
+dot(Y_co_blk) = CC.epsilon_minus * Y_cc_blk + CC.alpha_minus * Y_oo_blk - (CC.epsilon_plus_blk + CC.alpha_plus) * Y_co_blk
+dot(Y_oo_blk) = CC.alpha_plus * Y_co_blk + CC.epsilon_minus * Y_oc_blk - (CC.alpha_minus + CC.epsilon_plus_blk_loc) * Y_oo_blk
+dot(Y_oc_blk) = CC.epsilon_plus_blk_loc * Y_oo_blk + CC.alpha_plus * Y_cc_blk - (CC.epsilon_minus + CC.alpha_minus) * Y_oc_blk
+
+
+[BD]
+J_Ca_jnciz = RTF.G_dCa_jnciz * (JS.Ca_2_jnc10 - IDZ.Ca_2_iz10) * RTF.Sc_Cell
+J_Ca_izblk = RTF.G_dCa_izblk * (IDZ.Ca_2_iz10 - BS.Ca_2_blk) * RTF.Sc_Cell
+J_trans_SR = RTF.P_trans * (IC.Ca_2_SRup - ROSR.Ca_2_SRrl) * RTF.Sc_Cell
+
+
+[BS]
+dot(CaMCa) = RTF.k_on_CaM * BS.Ca_2_blk * (RTF.B_tot_CaM - CaMCa) - RTF.k_off_CaM * CaMCa
+dot(TnChCa) = RTF.k_on_TnCh * BS.Ca_2_blk * (RTF.B_tot_TnCh - TnChCa) - RTF.k_off_TnCh * TnChCa
+dot(SRCa) = RTF.k_on_SR * BS.Ca_2_blk * (RTF.B_tot_SR - SRCa) - RTF.k_off_SR * SRCa
+Ca_2_blk= IC.Ca_2_tot_blk - (CaMCa + TnChCa + SRCa + 3 * (CT.TSCa_3 + CT.TSCa_3W + CT.TSCa_3S) / 1000)
+
+
+[IDZ]
+L_free_iz0 = RTF.B_tot_L_iz - RTF.L_bound_iz
+H_free_iz0 = RTF.B_tot_H_iz - RTF.H_bound_iz
+Ca_2_iz1 = IC.Ca_2_tot_iz / (1 + L_free_iz0 / OTHER.K_dL_iz + H_free_iz0 / OTHER.K_dH_iz)
+L_free_iz1 = RTF.B_tot_L_iz / (1 + Ca_2_iz1 / OTHER.K_dL_iz)
+H_free_iz1 = RTF.B_tot_H_iz / (1 + Ca_2_iz1 / OTHER.K_dH_iz)
+Ca_2_iz2 = IC.Ca_2_tot_iz / (1 + L_free_iz1 / OTHER.K_dL_iz + H_free_iz1 / OTHER.K_dH_iz)
+L_free_iz2 = RTF.B_tot_L_iz / (1 + Ca_2_iz2 / OTHER.K_dL_iz)
+H_free_iz2 = RTF.B_tot_H_iz / (1 + Ca_2_iz2 / OTHER.K_dH_iz)
+Ca_2_iz3 = IC.Ca_2_tot_iz / (1 + L_free_iz2 / OTHER.K_dL_iz + H_free_iz1 / OTHER.K_dH_iz)
+L_free_iz3 = RTF.B_tot_L_iz / (1 + Ca_2_iz3 / OTHER.K_dL_iz)
+H_free_iz3 = RTF.B_tot_H_iz / (1 + Ca_2_iz3 / OTHER.K_dH_iz)
+Ca_2_iz4 = IC.Ca_2_tot_iz / (1 + L_free_iz3 / OTHER.K_dL_iz + H_free_iz1 / OTHER.K_dH_iz)
+L_free_iz4 = RTF.B_tot_L_iz / (1 + Ca_2_iz4 / OTHER.K_dL_iz)
+H_free_iz4 = RTF.B_tot_H_iz / (1 + Ca_2_iz4 / OTHER.K_dH_iz)
+Ca_2_iz5 = IC.Ca_2_tot_iz / (1 + L_free_iz4 / OTHER.K_dL_iz + H_free_iz1 / OTHER.K_dH_iz)
+L_free_iz5 = RTF.B_tot_L_iz / (1 + Ca_2_iz5 / OTHER.K_dL_iz)
+H_free_iz5 = RTF.B_tot_H_iz / (1 + Ca_2_iz5 / OTHER.K_dH_iz)
+Ca_2_iz6 = IC.Ca_2_tot_iz / (1 + L_free_iz5 / OTHER.K_dL_iz + H_free_iz1 / OTHER.K_dH_iz)
+L_free_iz6 = RTF.B_tot_L_iz / (1 + Ca_2_iz6 / OTHER.K_dL_iz)
+H_free_iz6 = RTF.B_tot_H_iz / (1 + Ca_2_iz6 / OTHER.K_dH_iz)
+Ca_2_iz7 = IC.Ca_2_tot_iz / (1 + L_free_iz6 / OTHER.K_dL_iz + H_free_iz1 / OTHER.K_dH_iz)
+L_free_iz7 = RTF.B_tot_L_iz / (1 + Ca_2_iz7 / OTHER.K_dL_iz)
+H_free_iz7 = RTF.B_tot_H_iz / (1 + Ca_2_iz7 / OTHER.K_dH_iz)
+Ca_2_iz8 = IC.Ca_2_tot_iz / (1 + L_free_iz7 / OTHER.K_dL_iz + H_free_iz1 / OTHER.K_dH_iz)
+L_free_iz8 = RTF.B_tot_L_iz / (1 + Ca_2_iz8 / OTHER.K_dL_iz)
+H_free_iz8 = RTF.B_tot_H_iz / (1 + Ca_2_iz8 / OTHER.K_dH_iz)
+Ca_2_iz9 = IC.Ca_2_tot_iz / (1 + L_free_iz8 / OTHER.K_dL_iz + H_free_iz1 / OTHER.K_dH_iz)
+L_free_iz9 = RTF.B_tot_L_iz / (1 + Ca_2_iz9 / OTHER.K_dL_iz)
+H_free_iz9 = RTF.B_tot_H_iz / (1 + Ca_2_iz9 / OTHER.K_dH_iz)
+Ca_2_iz10 = IC.Ca_2_tot_iz / (1 + L_free_iz9 / OTHER.K_dL_iz + H_free_iz1 / OTHER.K_dH_iz)
+L_free_iz10 = RTF.B_tot_L_iz / (1 + Ca_2_iz10 / OTHER.K_dL_iz)
+H_free_iz10 = RTF.B_tot_H_iz / (1 + Ca_2_iz10 / OTHER.K_dH_iz)
+
+L_bound_iz = RTF.B_tot_L_iz - L_free_iz10
+H_bound_iz = RTF.B_tot_H_iz - H_free_iz10
+
+
+[JS]
+L_free_jnc1 = RTF.B_tot_L_jnc / (1 + RTF.Ca_2_jnc / OTHER.K_dL_jnc)
+H_free_jnc1 = RTF.B_tot_H_jnc / (1 + RTF.Ca_2_jnc / OTHER.K_dH_jnc)
+Ca_2_jnc1 = IC.Ca_2_tot_jnc / (1 + L_free_jnc1 / OTHER.K_dL_jnc + H_free_jnc1 / OTHER.K_dH_jnc)
+L_free_jnc2 = RTF.B_tot_L_jnc / (1 + Ca_2_jnc1 / OTHER.K_dL_jnc)
+H_free_jnc2 = RTF.B_tot_H_jnc / (1 + Ca_2_jnc1 / OTHER.K_dH_jnc)
+Ca_2_jnc2 = IC.Ca_2_tot_jnc / (1 + L_free_jnc2 / OTHER.K_dL_jnc + H_free_jnc2 / OTHER.K_dH_jnc)
+L_free_jnc3 = RTF.B_tot_L_jnc / (1 + Ca_2_jnc2 / OTHER.K_dL_jnc)
+H_free_jnc3 = RTF.B_tot_H_jnc / (1 + Ca_2_jnc2 / OTHER.K_dH_jnc)
+Ca_2_jnc3 = IC.Ca_2_tot_jnc / (1 + L_free_jnc3 / OTHER.K_dL_jnc + H_free_jnc3 / OTHER.K_dH_jnc)
+L_free_jnc4 = RTF.B_tot_L_jnc / (1 + Ca_2_jnc3 / OTHER.K_dL_jnc)
+H_free_jnc4 = RTF.B_tot_H_jnc / (1 + Ca_2_jnc3 / OTHER.K_dH_jnc)
+Ca_2_jnc4 = IC.Ca_2_tot_jnc / (1 + L_free_jnc4 / OTHER.K_dL_jnc + H_free_jnc4 / OTHER.K_dH_jnc)
+L_free_jnc5 = RTF.B_tot_L_jnc / (1 + Ca_2_jnc4 / OTHER.K_dL_jnc)
+H_free_jnc5 = RTF.B_tot_H_jnc / (1 + Ca_2_jnc4 / OTHER.K_dH_jnc)
+Ca_2_jnc5 = IC.Ca_2_tot_jnc / (1 + L_free_jnc5 / OTHER.K_dL_jnc + H_free_jnc5 / OTHER.K_dH_jnc)
+L_free_jnc6 = RTF.B_tot_L_jnc / (1 + Ca_2_jnc5 / OTHER.K_dL_jnc)
+H_free_jnc6 = RTF.B_tot_H_jnc / (1 + Ca_2_jnc5 / OTHER.K_dH_jnc)
+Ca_2_jnc6 = IC.Ca_2_tot_jnc / (1 + L_free_jnc6 / OTHER.K_dL_jnc + H_free_jnc6 / OTHER.K_dH_jnc)
+L_free_jnc7 = RTF.B_tot_L_jnc / (1 + Ca_2_jnc6 / OTHER.K_dL_jnc)
+H_free_jnc7 = RTF.B_tot_H_jnc / (1 + Ca_2_jnc6 / OTHER.K_dH_jnc)
+Ca_2_jnc7 = IC.Ca_2_tot_jnc / (1 + L_free_jnc7 / OTHER.K_dL_jnc + H_free_jnc7 / OTHER.K_dH_jnc)
+L_free_jnc8 = RTF.B_tot_L_jnc / (1 + Ca_2_jnc7 / OTHER.K_dL_jnc)
+H_free_jnc8 = RTF.B_tot_H_jnc / (1 + Ca_2_jnc7 / OTHER.K_dH_jnc)
+Ca_2_jnc8 = IC.Ca_2_tot_jnc / (1 + L_free_jnc8 / OTHER.K_dL_jnc + H_free_jnc8 / OTHER.K_dH_jnc)
+L_free_jnc9 = RTF.B_tot_L_jnc / (1 + Ca_2_jnc8 / OTHER.K_dL_jnc)
+H_free_jnc9 = RTF.B_tot_H_jnc / (1 + Ca_2_jnc8 / OTHER.K_dH_jnc)
+Ca_2_jnc9 = IC.Ca_2_tot_jnc / (1 + L_free_jnc9 / OTHER.K_dL_jnc + H_free_jnc9 / OTHER.K_dH_jnc)
+L_free_jnc10 = RTF.B_tot_L_jnc / (1 + Ca_2_jnc9 / OTHER.K_dL_jnc)
+H_free_jnc10 = RTF.B_tot_H_jnc / (1 + Ca_2_jnc9 / OTHER.K_dH_jnc)
+Ca_2_jnc10 = IC.Ca_2_tot_jnc / (1 + L_free_jnc10 / OTHER.K_dL_jnc + H_free_jnc10 / OTHER.K_dH_jnc)
+
+
+[ROSR]
+a = 1
+b = RTF.B_tot_CSQN - IC.Ca_2_tot_SRrl + OTHER.K_d_CSQN_Ca
+c = -OTHER.K_d_CSQN_Ca * IC.Ca_2_tot_SRrl
+Ca_2_SRrl = (-b + sqrt((b)^2 - 4 * a * c)) / (2 * a)
+
+[OTHER]
+K_dL_iz = RTF.k_off_L_iz / RTF.k_on_L_iz
+K_dH_iz = RTF.k_off_H_iz / RTF.k_on_H_iz
+K_dL_jnc = RTF.k_off_L_jnc / RTF.k_on_L_jnc
+K_dH_jnc = RTF.k_off_H_jnc / RTF.k_on_H_jnc
+K_d_CSQN_Ca = RTF.k_off_CSQN / RTF.k_on_CSQN
+P_CaL_Na = 0.0000185 * RTF.P_CaL_Ca
+P_CaL_K = 0.000367 * RTF.P_CaL_Ca
+P_Ks_Na = 0.04 * RTF.P_Ks_K
+P_l_Ca_K = RTF.P_l_Ca_Na
+alpha_2_plus = RTF.k_2_plus
+delta_RTF = 2 * RTF.F / (RTF.R * RTF.T)
+f_L = RTF.J_L / RTF.g_D
+f_R = RTF.J_R / RTF.g_D
+k_oc = RTF.Q_10 * 0.5664
+Cm = 192.46 * RTF.Sc_Cell
+V_cell = 120 * (37.62 * RTF.Sc_Cell) * 8.4
+V_jnc = 0.008 * V_cell
+V_iz = 0.035 * V_cell
+V_blk = 0.68 * V_cell
+V_SRt = 0.06 * V_cell
+V_SRrl = 0.2 * V_SRt
+V_SRup = 0.8 * V_SRt
+V_cyt = OTHER.V_jnc + OTHER.V_iz + OTHER.V_blk
+Yvd = RTF.Yv
+
+[[protocol]]
+# Level  Start    Length   Period   Multiplier
+1         50         3      1000        0
