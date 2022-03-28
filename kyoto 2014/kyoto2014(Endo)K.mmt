@@ -1,0 +1,1644 @@
+[[model]]
+
+# Initial values
+membrane.Vm = -91.364111716184041
+IIC.Na_i = 6.8151373016677805
+IIC.K_i = 139.0561998319366
+IIC.Ca_2_tot_jnc = 0.00039795809096128409
+IIC.Ca_2_tot_iz = 0.00025268299350756843
+IIC.Ca_2_tot_blk = 0.0000667801021116907
+JNC.Ca_jnc = 0.00039795809096128409
+IZ.Ca_iz = 0.00025268299350756843
+LORO.Ca_blk = 0.0000667801021116907
+IIC.Ca_2_SRup = 0.56250295256576965
+IIC.Ca_2_tot_SRrl = 1.9128092931058895
+BS.TnChCa = 0.107546349
+BS.CaMCa = 0.000116997
+BS.SRCa = 0.00092639
+CB.TnChCa = 0.107546349
+CB.CaMCa = 0.000116997
+CB.SRCa = 0.00092639
+# Lb_jnc = 0.032868783807565416
+# Lb_iz = 0.011563775702743251
+# Hb_jnc = 0.226665087396588
+# Hb_iz = 0.099458321251370288
+# internal_ion_concentrations 
+IIC.Ca_Total = 4.0180173572968586e-4
+AP.ATPi = 4.657102729020499
+SCVDG.p_RP_Na = 0.3556412697995689
+SCVDG.p_AP_Na = 1.779648367445368e-5
+SCVDG.p_AI_Na = 0.40285968661346977
+# sodium_current_ultra_slow_gate
+SCUSG.y = 0.5861887862983165
+CCV.p_RP_CaL = 0.9968480629364956
+CCV.p_AP_CaL = 1.5445004166497696e-6
+CCV.p_AI_CaL = 8.77325391245903e-4
+LCC.p_U = 0.17246483915629204
+LCC.p_UCa = 6.098246017787626e-5
+LCC.p_C = 0.4250747299372254
+# L_type_Ca_channel_ultra_slow_gate
+LCUS.y = 0.9985266538252986
+# T_type_Ca_channel_y1_gate
+TTCC1.y1 = 1.6882718240109127e-5
+TTCC2.y2 = 0.8585352091865849
+# time_independent_potassium_current_y_gate
+#TIPCY.y = 0.6080573900752752
+# rapid_time_dependent_potassium_current_y1_gate
+#RTDPC1.y1 = 0.0018339931180983765
+#RTDPC2.y2 = 0.20443083454225305
+#RTDPC3.y3 = 0.967887666264921
+# slow_time_dependent_potassium_current_y1_gate
+#STDPC1.y1 = 0.09738789658609195
+#STDPC2.y2 = 0.09745345578743213
+# transient_outward_current_y1_gate
+#TOC1.y1 = 7.956883250874798e-4
+#TOC2.y2 = 0.9999125083105881
+# sodium_calcium_exchanger_y_gate
+SCEY.y = 0.9891789193465331
+# sodium_potassium_pump_y_gate
+SPPY.y = 0.5910747147428818
+# SR_calcium_pump_y_gate
+SRCPY.y = 0.46108441538480216
+RC.p_open_RyR = 3.4314360001543243e-4
+RC.p_close_RyR = 0.19135178123107768
+# Ca_concentrations_in_SR
+CCSR.Ca_Total = 9.455741736977666
+CCSR.Caup = 2.611712901567567
+NM.X = 0.9573749975411884
+NM.pCa = 0.02490898775497523
+NM.pCaCB = 0.001990153835322864
+NM.pCB = 4.2941813853474524e-4
+CN.p_O_NaT = 0.000000706725155695262
+TC.p_O_NaT = 0.000000706725155695262
+TC.p_I_2_NaT = 0.0117704053067285
+TC.p_I_s_NaT = 0.304002781414015
+CN.p_O_NaL = 0.00000295214591324261
+LC.p_O_NaL = 0.00000295214591324261
+LC.p_I_1_NaL = 0.00254273877063925
+LC.p_I_2_NaL = 0.0118261382165599
+LC.p_I_s_NaL = 0.303220346353844
+CKR.chi_r_fast = 0.00000486210633393005
+CKR.chi_r_slow = 0.437041249050081
+NPC.P_7 = 0.0831770174499825
+NPC.P_8_13 = 0.281082409575779
+NPC.P_1_6 = 0.435289193632868
+NCEC.p_E_1_NCX_blk = 0.111872123711613
+NCEC.p_I_1_NCX_blk = 0.203023555446362
+NCEC.p_I_2_NCX_blk = 0.684869019924837
+NCEC.p_E_1_NCX_iz = 0.238718640001014
+NCEC.p_I_1_NCX_iz = 0.13771129457898
+NCEC.p_I_2_NCX_iz = 0.622892868847556
+CARU.Y_ooo = 0.00000172489315884865
+CARU.Y_ooc = 0.00000142034754677507
+CARU.Y_coo = 0.0000138422676498755
+CARU.Y_coc = 0.992110534408681
+CARU.Y_cco = 0.0000000953816272498217
+CARU.Y_oco = 0.00000000000156949238162028
+CARU.Y_occ = 0.0000000249594301562175
+CC.Y_co_iz = 0.992251726297519
+CC.Y_oo_iz = 0.00000314564543512061
+CC.Y_oc_iz = 0.000000024556270151713
+CC.Y_co_blk = 0.992424981547859
+CC.Y_oo_blk = 0.00000314619469048683
+CC.Y_oc_blk = 0.0000000240070147854924
+CT.TSCa_3 = 0.0086895187306879739
+CT.TSCa_3W = 0.0003391299963111013    
+CT.TSCa_3S = 0.00013952053460170792    
+CT.TS_S = 0.000876347322180234
+CT.TS_W = 0.000492054058977473
+CT.hw = 0.000100147615113241
+CT.hp = 0.00600014761511324
+CK1.Pb_spm = 0.594875991179992
+TSB.Pb_spm = 0.594875991179992
+# random 
+TC.p_C_NaT = 0.00000000000001
+LC.p_C_NaL = 0.00000000000001
+TGP.y1 = 0.00000000000001
+TGP.y2 = 0.00000000000001
+TGP.y3 = 0.00000000000001
+VG2.p_O_v = 0.00000000000001
+CG2.p_blk_O_c = 0.00000000000001
+CG2.p_blk_C_2 = 0.00000000000001
+CG2.p_iz_O_c = 0.00000000000001
+CG2.p_iz_C_2 = 0.00000000000001
+ENDO.y_1Kto = 0.00000000000001
+ENDO.y_2Kto = 0.00000000000001
+
+
+# Engine variables
+#
+[engine]
+time = 0 in [ms] bind time
+pace = 0 bind pace
+
+[stimulus]
+i_stim = engine.pace * amplitude
+amplitude = -12 [pA/pF]
+
+# Membrane potential
+[membrane]
+Cm = 177
+I_tot_cell = I_tot_Na + I_tot_Ca + I_tot_K
+I_tot_Ca = I_tot_Ca_jnc + I_tot_Ca_iz + I_tot_Ca_blk
+I_tot_Ca_jnc = LTCC.I_CaL_Ca_jnc
+I_tot_Ca_iz = LTCC.I_CaL_Ca_iz + PMCAC.I_PMCA_iz + NCEC.I_NCX_Ca_iz + BCC.I_Cab_iz
+I_tot_Ca_blk = LTCC.I_CaL_Ca_blk + PMCAC.I_PMCA_blk + NCEC.I_NCX_Ca_blk + BCC.I_Cab_blk
+I_tot_Na = (LTCC.I_CaL_Na_jnc + LTCC.I_CaL_Na_iz + LTCC.I_CaL_Na_blk) + (NCEC.I_NCX_Na_iz + NCEC.I_NCX_Na_blk) + (STDPC.I_Ks_Na_iz + STDPC.I_Ks_Na_blk) + CN.I_NaT_Na + CN.I_NaL_Na + NPC.I_NaK_Na + RTF.I_Kto_Na + BNSCC.I_bNSC_Na + (CICA.I_LCCa_Na_iz + CICA.I_LCCa_Na_blk)
+I_tot_K = (LTCC.I_CaL_K_jnc + LTCC.I_CaL_K_iz + LTCC.I_CaL_K_blk) + CN.I_NaT_K + CN.I_NaL_K + CK1.I_K1_K + CKR.I_Kr_K + (STDPC.I_Ks_K_iz + STDPC.I_Ks_K_blk) + TOK.I_Kto_K + VDPC.I_Kpl + NPC.I_NaK_K + CKATP.I_KATP_K + BNSCC.I_bNSC_K + (CICA.I_LCCa_K_iz + CICA.I_LCCa_K_blk)
+
+dot(Vm) = -(I_tot_cell + stimulus.i_stim)
+    label membrane_potential
+    in [mV]
+
+R = 8.3143
+T = 310
+F = 96.4867
+
+# from huvec2
+[BS]
+dot(CaMCa) = RTF.k_on_CaM * BS.Ca_2_blk * (RTF.B_tot_CaM - CaMCa) - RTF.k_off_CaM * CaMCa
+dot(TnChCa) = RTF.k_on_TnCh * BS.Ca_2_blk * (RTF.B_tot_TnCh - TnChCa) - RTF.k_off_TnCh * TnChCa
+dot(SRCa) = RTF.k_on_SR * BS.Ca_2_blk * (RTF.B_tot_SR - SRCa) - RTF.k_off_SR * SRCa
+Ca_2_blk= IIC.Ca_2_tot_blk - (CaMCa + TnChCa + SRCa + 3 * (CT.TSCa_3 + CT.TSCa_3W + CT.TSCa_3S) / 1000)
+
+# from huvec2
+[CT]
+TS = RTF.TS_tot - TSCa_3 - TSCa_3W - TSCa_3S - TS_S - TS_W
+rate_g = RTF.Za + RTF.Yv * (1 - exp(-RTF.propFh * (hw - RTF.hwr)^2))
+rate_gd = RTF.Yd + RTF.Yc * (RTF.halfSL - RTF.Lc)^2 + OTHER.Yvd * (1 - exp(-RTF.propFh * (hw - RTF.hwr)^2))
+dot(TSCa_3) = RTF.Yb * TS * (BS.Ca_2_blk * 1000)^3 - RTF.Zb * TSCa_3 + rate_g * TSCa_3W - RTF.rate_f * exp(-RTF.convertF * (RTF.halfSL - RTF.eqvhalfSL)^2) * TSCa_3
+dot(TSCa_3W) = RTF.rate_f * exp(-RTF.convertF * (RTF.halfSL - RTF.eqvhalfSL)^2) * TSCa_3 - rate_g * TSCa_3W + RTF.Zp * TSCa_3S - RTF.Yp * TSCa_3W
+dot(TSCa_3S) = RTF.Yp * TSCa_3W - RTF.Zp * TSCa_3S + RTF.Zr * TS_S * (BS.Ca_2_blk * 1000)^3 - RTF.Yr * TSCa_3S
+dot(TS_S) = RTF.Yr * TSCa_3S - RTF.Zr * TS_S * (BS.Ca_2_blk * 1000)^3 + RTF.Zq * TS_W - RTF.Yq * TS_S
+dot(TS_W) = RTF.Yq * TS_S - RTF.Zq * TS_W - rate_gd * TS_W
+dot(hw) = -RTF.rate_B * (hw - RTF.hwr)
+dot(hp) = -RTF.rate_B * (hp - RTF.hpr)
+
+# from huvec2
+[IDZ]
+L_free_iz0 = RTF.B_tot_L_iz - RTF.L_bound_iz
+H_free_iz0 = RTF.B_tot_H_iz - RTF.H_bound_iz
+Ca_2_iz1 = IIC.Ca_2_tot_iz / (1 + L_free_iz0 / OTHER.K_dL_iz + H_free_iz0 / OTHER.K_dH_iz)
+L_free_iz1 = RTF.B_tot_L_iz / (1 + Ca_2_iz1 / OTHER.K_dL_iz)
+H_free_iz1 = RTF.B_tot_H_iz / (1 + Ca_2_iz1 / OTHER.K_dH_iz)
+Ca_2_iz2 = IIC.Ca_2_tot_iz / (1 + L_free_iz1 / OTHER.K_dL_iz + H_free_iz1 / OTHER.K_dH_iz)
+L_free_iz2 = RTF.B_tot_L_iz / (1 + Ca_2_iz2 / OTHER.K_dL_iz)
+H_free_iz2 = RTF.B_tot_H_iz / (1 + Ca_2_iz2 / OTHER.K_dH_iz)
+Ca_2_iz3 = IIC.Ca_2_tot_iz / (1 + L_free_iz2 / OTHER.K_dL_iz + H_free_iz1 / OTHER.K_dH_iz)
+L_free_iz3 = RTF.B_tot_L_iz / (1 + Ca_2_iz3 / OTHER.K_dL_iz)
+H_free_iz3 = RTF.B_tot_H_iz / (1 + Ca_2_iz3 / OTHER.K_dH_iz)
+Ca_2_iz4 = IIC.Ca_2_tot_iz / (1 + L_free_iz3 / OTHER.K_dL_iz + H_free_iz1 / OTHER.K_dH_iz)
+L_free_iz4 = RTF.B_tot_L_iz / (1 + Ca_2_iz4 / OTHER.K_dL_iz)
+H_free_iz4 = RTF.B_tot_H_iz / (1 + Ca_2_iz4 / OTHER.K_dH_iz)
+Ca_2_iz5 = IIC.Ca_2_tot_iz / (1 + L_free_iz4 / OTHER.K_dL_iz + H_free_iz1 / OTHER.K_dH_iz)
+L_free_iz5 = RTF.B_tot_L_iz / (1 + Ca_2_iz5 / OTHER.K_dL_iz)
+H_free_iz5 = RTF.B_tot_H_iz / (1 + Ca_2_iz5 / OTHER.K_dH_iz)
+Ca_2_iz6 = IIC.Ca_2_tot_iz / (1 + L_free_iz5 / OTHER.K_dL_iz + H_free_iz1 / OTHER.K_dH_iz)
+L_free_iz6 = RTF.B_tot_L_iz / (1 + Ca_2_iz6 / OTHER.K_dL_iz)
+H_free_iz6 = RTF.B_tot_H_iz / (1 + Ca_2_iz6 / OTHER.K_dH_iz)
+Ca_2_iz7 = IIC.Ca_2_tot_iz / (1 + L_free_iz6 / OTHER.K_dL_iz + H_free_iz1 / OTHER.K_dH_iz)
+L_free_iz7 = RTF.B_tot_L_iz / (1 + Ca_2_iz7 / OTHER.K_dL_iz)
+H_free_iz7 = RTF.B_tot_H_iz / (1 + Ca_2_iz7 / OTHER.K_dH_iz)
+Ca_2_iz8 = IIC.Ca_2_tot_iz / (1 + L_free_iz7 / OTHER.K_dL_iz + H_free_iz1 / OTHER.K_dH_iz)
+L_free_iz8 = RTF.B_tot_L_iz / (1 + Ca_2_iz8 / OTHER.K_dL_iz)
+H_free_iz8 = RTF.B_tot_H_iz / (1 + Ca_2_iz8 / OTHER.K_dH_iz)
+Ca_2_iz9 = IIC.Ca_2_tot_iz / (1 + L_free_iz8 / OTHER.K_dL_iz + H_free_iz1 / OTHER.K_dH_iz)
+L_free_iz9 = RTF.B_tot_L_iz / (1 + Ca_2_iz9 / OTHER.K_dL_iz)
+H_free_iz9 = RTF.B_tot_H_iz / (1 + Ca_2_iz9 / OTHER.K_dH_iz)
+Ca_2_iz10 = IIC.Ca_2_tot_iz / (1 + L_free_iz9 / OTHER.K_dL_iz + H_free_iz1 / OTHER.K_dH_iz)
+L_free_iz10 = RTF.B_tot_L_iz / (1 + Ca_2_iz10 / OTHER.K_dL_iz)
+H_free_iz10 = RTF.B_tot_H_iz / (1 + Ca_2_iz10 / OTHER.K_dH_iz)
+
+L_bound_iz = RTF.B_tot_L_iz - L_free_iz10
+H_bound_iz = RTF.B_tot_H_iz - H_free_iz10
+
+# from huvec2
+[JS]
+L_free_jnc1 = RTF.B_tot_L_jnc / (1 + RTF.Ca_2_jnc / OTHER.K_dL_jnc)
+H_free_jnc1 = RTF.B_tot_H_jnc / (1 + RTF.Ca_2_jnc / OTHER.K_dH_jnc)
+Ca_2_jnc1 = IIC.Ca_2_tot_jnc / (1 + L_free_jnc1 / OTHER.K_dL_jnc + H_free_jnc1 / OTHER.K_dH_jnc)
+L_free_jnc2 = RTF.B_tot_L_jnc / (1 + Ca_2_jnc1 / OTHER.K_dL_jnc)
+H_free_jnc2 = RTF.B_tot_H_jnc / (1 + Ca_2_jnc1 / OTHER.K_dH_jnc)
+Ca_2_jnc2 = IIC.Ca_2_tot_jnc / (1 + L_free_jnc2 / OTHER.K_dL_jnc + H_free_jnc2 / OTHER.K_dH_jnc)
+L_free_jnc3 = RTF.B_tot_L_jnc / (1 + Ca_2_jnc2 / OTHER.K_dL_jnc)
+H_free_jnc3 = RTF.B_tot_H_jnc / (1 + Ca_2_jnc2 / OTHER.K_dH_jnc)
+Ca_2_jnc3 = IIC.Ca_2_tot_jnc / (1 + L_free_jnc3 / OTHER.K_dL_jnc + H_free_jnc3 / OTHER.K_dH_jnc)
+L_free_jnc4 = RTF.B_tot_L_jnc / (1 + Ca_2_jnc3 / OTHER.K_dL_jnc)
+H_free_jnc4 = RTF.B_tot_H_jnc / (1 + Ca_2_jnc3 / OTHER.K_dH_jnc)
+Ca_2_jnc4 = IIC.Ca_2_tot_jnc / (1 + L_free_jnc4 / OTHER.K_dL_jnc + H_free_jnc4 / OTHER.K_dH_jnc)
+L_free_jnc5 = RTF.B_tot_L_jnc / (1 + Ca_2_jnc4 / OTHER.K_dL_jnc)
+H_free_jnc5 = RTF.B_tot_H_jnc / (1 + Ca_2_jnc4 / OTHER.K_dH_jnc)
+Ca_2_jnc5 = IIC.Ca_2_tot_jnc / (1 + L_free_jnc5 / OTHER.K_dL_jnc + H_free_jnc5 / OTHER.K_dH_jnc)
+L_free_jnc6 = RTF.B_tot_L_jnc / (1 + Ca_2_jnc5 / OTHER.K_dL_jnc)
+H_free_jnc6 = RTF.B_tot_H_jnc / (1 + Ca_2_jnc5 / OTHER.K_dH_jnc)
+Ca_2_jnc6 = IIC.Ca_2_tot_jnc / (1 + L_free_jnc6 / OTHER.K_dL_jnc + H_free_jnc6 / OTHER.K_dH_jnc)
+L_free_jnc7 = RTF.B_tot_L_jnc / (1 + Ca_2_jnc6 / OTHER.K_dL_jnc)
+H_free_jnc7 = RTF.B_tot_H_jnc / (1 + Ca_2_jnc6 / OTHER.K_dH_jnc)
+Ca_2_jnc7 = IIC.Ca_2_tot_jnc / (1 + L_free_jnc7 / OTHER.K_dL_jnc + H_free_jnc7 / OTHER.K_dH_jnc)
+L_free_jnc8 = RTF.B_tot_L_jnc / (1 + Ca_2_jnc7 / OTHER.K_dL_jnc)
+H_free_jnc8 = RTF.B_tot_H_jnc / (1 + Ca_2_jnc7 / OTHER.K_dH_jnc)
+Ca_2_jnc8 = IIC.Ca_2_tot_jnc / (1 + L_free_jnc8 / OTHER.K_dL_jnc + H_free_jnc8 / OTHER.K_dH_jnc)
+L_free_jnc9 = RTF.B_tot_L_jnc / (1 + Ca_2_jnc8 / OTHER.K_dL_jnc)
+H_free_jnc9 = RTF.B_tot_H_jnc / (1 + Ca_2_jnc8 / OTHER.K_dH_jnc)
+Ca_2_jnc9 = IIC.Ca_2_tot_jnc / (1 + L_free_jnc9 / OTHER.K_dL_jnc + H_free_jnc9 / OTHER.K_dH_jnc)
+L_free_jnc10 = RTF.B_tot_L_jnc / (1 + Ca_2_jnc9 / OTHER.K_dL_jnc)
+H_free_jnc10 = RTF.B_tot_H_jnc / (1 + Ca_2_jnc9 / OTHER.K_dH_jnc)
+Ca_2_jnc10 = IIC.Ca_2_tot_jnc / (1 + L_free_jnc10 / OTHER.K_dL_jnc + H_free_jnc10 / OTHER.K_dH_jnc)
+
+# from huvec2
+#[IC]
+#use membrane.Vm, membrane.R, membrane.T, membrane.F
+#dot(Ca_2_tot_jnc) = -membrane.I_tot_Ca_jnc * OTHER.Cm / (OTHER.V_jnc * 2 * RTF.F) + CARU.J_Ca_rel / OTHER.V_jnc - BID.J_Ca_jnciz / OTHER.V_jnc
+#dot(Ca_2_tot_iz) = -membrane.I_tot_Ca_iz * OTHER.Cm / (OTHER.V_iz * 2 * RTF.F) + BID.J_Ca_jnciz / OTHER.V_iz - BID.J_Ca_izblk / OTHER.V_iz
+#dot(Ca_2_tot_blk) = -membrane.I_tot_Ca_blk * OTHER.Cm / (OTHER.V_blk * 2 * RTF.F) - SERCA.J_SERCA / OTHER.V_blk + BID.J_Ca_izblk / OTHER.V_blk
+#dot(Ca_2_SRup) = SERCA.J_SERCA / OTHER.V_SRup - CTFS.J_trans_SR / OTHER.V_SRup
+#dot(Ca_2_tot_SRrl) = CTFS.J_trans_SR / OTHER.V_SRrl - CARU.J_Ca_rel / OTHER.V_SRrl
+#dot(Nai) = -membrane.I_tot_Na * OTHER.Cm / (OTHER.V_cyt * RTF.F)
+#dot(Ki) = -(membrane.I_tot_K + RTF.I_app) * OTHER.Cm / (OTHER.V_cyt * RTF.F)
+
+# from huvec2
+[ROSR]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+a = 1
+b = RTF.B_tot_CSQN - IIC.Ca_2_tot_SRrl + OTHER.K_d_CSQN_Ca
+c = -OTHER.K_d_CSQN_Ca * IIC.Ca_2_tot_SRrl
+Ca_2_SRrl = (-b + sqrt((b)^2 - 4 * a * c)) / (2 * a)
+
+# from huvec2
+[OTHER]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+K_dL_iz = RTF.k_off_L_iz / RTF.k_on_L_iz
+K_dH_iz = RTF.k_off_H_iz / RTF.k_on_H_iz
+K_dL_jnc = RTF.k_off_L_jnc / RTF.k_on_L_jnc
+K_dH_jnc = RTF.k_off_H_jnc / RTF.k_on_H_jnc
+K_d_CSQN_Ca = RTF.k_off_CSQN / RTF.k_on_CSQN
+P_CaL_Na = 0.0000185 * RTF.P_CaL_Ca
+P_CaL_K = 0.000367 * RTF.P_CaL_Ca
+P_Ks_Na = 0.04 * RTF.P_Ks_K
+P_l_Ca_K = RTF.P_l_Ca_Na
+alpha_2_plus = RTF.k_2_plus
+delta_RTF = 2 * RTF.F / (RTF.R * RTF.T)
+f_L = RTF.J_L / RTF.g_D
+f_R = RTF.J_R / RTF.g_D
+k_oc = RTF.Q_10 * 0.5664
+Cm = 192.46 * RTF.Sc_Cell
+V_cell = 120 * (37.62 * RTF.Sc_Cell) * 8.4
+V_jnc = 0.008 * V_cell
+V_iz = 0.035 * V_cell
+V_blk = 0.68 * V_cell
+V_SRt = 0.06 * V_cell
+V_SRrl = 0.2 * V_SRt
+V_SRup = 0.8 * V_SRt
+V_cyt = OTHER.V_jnc + OTHER.V_iz + OTHER.V_blk
+Yvd = RTF.Yv
+
+# from huvec2
+[CARU]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+p_O_RyR = Y_ooo + Y_coo + Y_cco + Y_oco
+p_O_RyR_t = p_O_RyR + RTF.p_O_RyR_base
+
+J_Ca_rel = RTF.P_RyR * p_O_RyR_t * (ROSR.Ca_2_SRrl - JS.Ca_2_jnc10) * RTF.Sc_Cell
+
+Ca_2_nd_00 = JS.Ca_2_jnc10
+Ca_2_nd_L0 = (Ca_2_nd_00 + OTHER.f_L * OTHER.delta_RTF * Vm * exp(-OTHER.delta_RTF * Vm) / (1 - exp(-OTHER.delta_RTF * Vm)) * RTF.Ca_o) / (1 + OTHER.f_L * OTHER.delta_RTF * Vm / (1 - exp(-OTHER.delta_RTF * Vm)))
+Ca_2_nd_0R = (Ca_2_nd_00 + OTHER.f_R * ROSR.Ca_2_SRrl) / (1 + OTHER.f_R)
+Ca_2_nd_LR = (Ca_2_nd_00 + OTHER.f_R * ROSR.Ca_2_SRrl + OTHER.f_L * OTHER.delta_RTF * Vm * exp(-OTHER.delta_RTF * Vm) / (1 - exp(-OTHER.delta_RTF * Vm)) * RTF.Ca_o) / (1 + OTHER.f_R + OTHER.f_L * OTHER.delta_RTF * Vm / (1 - exp(-OTHER.delta_RTF * Vm)))
+
+epsilon_plus_00 = (Ca_2_nd_00 * CC.alpha_plus) / (RTF.T_L * RTF.K_L)
+epsilon_plus_L0 = (Ca_2_nd_L0 * CC.alpha_plus) / (RTF.T_L * RTF.K_L)
+epsilon_plus_0R = (Ca_2_nd_0R * CC.alpha_plus) / (RTF.T_L * RTF.K_L)
+epsilon_plus_LR = (Ca_2_nd_LR * CC.alpha_plus) / (RTF.T_L * RTF.K_L)
+
+k_co_00 = RTF.Q_10 * 0.4 / (1 + (0.025 / Ca_2_nd_00)^2.7)
+k_co_L0 = RTF.Q_10 * 0.4 / (1 + (0.025 / Ca_2_nd_L0)^2.7)
+k_co_0R = RTF.Q_10 * 0.4 / (1 + (0.025 / Ca_2_nd_0R)^2.7)
+k_co_LR = RTF.Q_10 * 0.4 / (1 + (0.025 / Ca_2_nd_LR)^2.7)
+f_t_00 = k_co_00 / (k_co_00 + OTHER.k_oc)
+f_t_L0 = k_co_L0 / (k_co_L0 + OTHER.k_oc)
+k_rco_0 = RTF.f_n * f_t_00 * k_co_0R * (RTF.sloc0 + ROSR.Ca_2_SRrl)
+k_rco_L = RTF.f_n * f_t_L0 * k_co_LR * (RTF.sloc0 + ROSR.Ca_2_SRrl)
+p_C_0 = OTHER.k_oc / (OTHER.k_oc + f_t_00 * (k_rco_0 / (RTF.f_n * f_t_00)))
+p_C_L = OTHER.k_oc / (OTHER.k_oc + f_t_00 * (k_rco_L / (RTF.f_n * f_t_L0)))
+k_roc_0 = OTHER.k_oc * (p_C_0)^(RTF.N_RyR - 1) * 0.74
+k_roc_L = OTHER.k_oc * (p_C_L)^(RTF.N_RyR - 1) * 0.74
+
+Y_ccc = 1 - (Y_ooo + CARU.Y_ooc + Y_coo + Y_coc + Y_cco + Y_oco + Y_occ)
+dot(Y_ooo) = k_rco_L * CARU.Y_ooc + CC.alpha_plus * Y_coo + CC.epsilon_minus * Y_oco - (k_roc_L + CC.alpha_minus + epsilon_plus_LR) * Y_ooo
+dot(Y_ooc) = CC.alpha_plus * Y_coc + k_roc_L * Y_ooo + CC.epsilon_minus * Y_occ - (CC.alpha_minus + k_rco_L + epsilon_plus_L0) * CARU.Y_ooc
+dot(Y_coo) = k_rco_0 * Y_coc + CC.alpha_minus * Y_ooo + CC.epsilon_minus * Y_cco - (k_roc_0 + CC.alpha_plus + epsilon_plus_0R) * Y_coo
+dot(Y_coc) = k_roc_0 * Y_coo + CC.alpha_minus * CARU.Y_ooc + CC.epsilon_minus * Y_ccc - (k_rco_0 + CC.alpha_plus + epsilon_plus_00) * Y_coc
+dot(Y_cco) = k_rco_0 * Y_ccc + CC.alpha_minus * Y_oco + epsilon_plus_0R * Y_coo - (k_roc_0 + CC.alpha_plus + CC.epsilon_minus) * Y_cco
+dot(Y_oco) = k_rco_0 * Y_occ + CC.alpha_plus * Y_cco + epsilon_plus_LR * Y_ooo - (k_roc_0 + CC.alpha_minus + CC.epsilon_minus) * Y_oco
+dot(Y_occ) = CC.alpha_plus * Y_ccc + k_roc_0 * Y_oco + epsilon_plus_L0 * CARU.Y_ooc - (CC.alpha_minus + k_rco_0 + CC.epsilon_minus) * Y_occ
+
+# from huvec2
+[CC]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+alpha_plus = 1 / (3.734 * exp(-Vm / 8.5) + 0.35 * exp(-Vm / 3500))
+alpha_minus = 1 / (4.65 * exp(Vm / 15) + 1.363 * exp(Vm / 100))
+
+epsilon_plus_iz = (IDZ.Ca_2_iz10 * CC.alpha_plus) / (RTF.T_L * RTF.K_L)
+epsilon_plus_blk = (BS.Ca_2_blk * CC.alpha_plus) / (RTF.T_L * RTF.K_L)
+Ca_2_iz_loc = (IDZ.Ca_2_iz10 + OTHER.f_L * OTHER.delta_RTF * Vm * exp(-OTHER.delta_RTF * Vm) / (1 - exp(-OTHER.delta_RTF * Vm)) * RTF.Ca_o) / (1 + OTHER.f_L * OTHER.delta_RTF * Vm / (1 - exp(-OTHER.delta_RTF * Vm)))
+Ca_2_blk_loc = (BS.Ca_2_blk + OTHER.f_L * (OTHER.delta_RTF * Vm * exp(-OTHER.delta_RTF * Vm)) / (1 - exp(-OTHER.delta_RTF * Vm)) * RTF.Ca_o) / (1 + OTHER.f_L * OTHER.delta_RTF * Vm / (1 - exp(-OTHER.delta_RTF * Vm)))
+epsilon_plus_iz_loc = (CC.Ca_2_iz_loc * CC.alpha_plus) / (RTF.T_L * RTF.K_L)
+epsilon_plus_blk_loc = (CC.Ca_2_blk_loc * CC.alpha_plus) / (RTF.T_L * RTF.K_L)
+epsilon_minus = 1 / (8084 * exp(Vm / 10) + 158 * exp(Vm / 1000)) + 1 / (134736 * exp(-Vm / 5) + 337 * exp(-Vm / 2000))
+
+
+p_O_LCC = CARU.Y_ooo + CARU.Y_ooc
+ATP = 6
+ATPfactor = 1 / (1 + (1.4 / RTF.ATP)^3)
+
+GHK_Ca_LR = 2 * Vm / (RTF.R * RTF.T / RTF.F) * (CARU.Ca_2_nd_LR - RTF.Ca_o * exp(-2 * Vm / (RTF.R * RTF.T / RTF.F))) / (1 - exp(-2 * Vm / (RTF.R * RTF.T / RTF.F)))
+GHK_Ca_L0 = 2 * Vm / (RTF.R * RTF.T / RTF.F) * (CARU.Ca_2_nd_L0 - RTF.Ca_o * exp(-2 * Vm / (RTF.R * RTF.T / RTF.F))) / (1 - exp(-2 * Vm / (RTF.R * RTF.T / RTF.F)))
+GHK_Ca_iz = 2 * Vm / (RTF.R * RTF.T / RTF.F) * (IDZ.Ca_2_iz10 - RTF.Ca_o * exp(-2 * Vm / (RTF.R * RTF.T / RTF.F))) / (1 - exp(-2 * Vm / (RTF.R * RTF.T / RTF.F)))
+GHK_Ca_blk = 2 * Vm / (RTF.R * RTF.T / RTF.F) * (BS.Ca_2_blk - RTF.Ca_o * exp(-2 * Vm / (RTF.R * RTF.T / RTF.F))) / (1 - exp(-2 * Vm / (RTF.R * RTF.T / RTF.F)))
+GHK_Na = ((1 * F * Vm) / (R * T)) * (IIC.Na_i - (EIC.Na_o * exp((-1 * F * Vm) / R * T) / (1 - exp(-1 * F * Vm / R * T)))) 
+GHK_K = ((1 * F * Vm) / (R * T)) * (IIC.K_i - (EIC.K_o * exp((-1 * F * Vm) / R * T) / (1 - exp(-1 * F * Vm / R * T)))) 
+GHK_Ca = ((1 * F * Vm) / (R * T)) * (IIC.Ca_i - (EIC.Ca_o * exp((-1 * F * Vm) / R * T) / (1 - exp(-1 * F * Vm / R * T))))  
+
+I_CaL_Ca_blk = RTF.f_CaL_blk * RTF.P_CaL_Ca * GHK_Ca_blk * CC.Y_oo_blk * ATPfactor
+I_CaL_Ca_iz = RTF.f_CaL_iz * RTF.P_CaL_Ca * GHK_Ca_iz * CC.Y_oo_iz * ATPfactor
+I_CaL_Ca_LR = RTF.f_CaL_jnc * RTF.P_CaL_Ca * GHK_Ca_LR * CARU.Y_ooo * ATPfactor
+I_CaL_Ca_L0 = RTF.f_CaL_jnc * RTF.P_CaL_Ca * GHK_Ca_L0 * CARU.Y_ooc * ATPfactor
+I_CaL_Ca_jnc = I_CaL_Ca_LR + I_CaL_Ca_L0
+I_CaL_Na_blk = RTF.f_CaL_blk * OTHER.P_CaL_Na * CC.GHK_Na * CC.Y_oo_blk * ATPfactor
+I_CaL_Na_iz = RTF.f_CaL_iz * OTHER.P_CaL_Na * CC.GHK_Na * CC.Y_oo_iz * ATPfactor
+I_CaL_Na_jnc = RTF.f_CaL_jnc * OTHER.P_CaL_Na * CC.GHK_Na * p_O_LCC * ATPfactor
+I_CaL_K_blk = RTF.f_CaL_blk * OTHER.P_CaL_K * CC.GHK_K * CC.Y_oo_blk * ATPfactor
+I_CaL_K_iz = RTF.f_CaL_iz * OTHER.P_CaL_K * CC.GHK_K * CC.Y_oo_iz * ATPfactor
+I_CaL_K_jnc = RTF.f_CaL_jnc * OTHER.P_CaL_K * CC.GHK_K * p_O_LCC * ATPfactor
+
+I_CaL = (I_CaL_Ca_jnc + I_CaL_Na_jnc + I_CaL_K_jnc) + (I_CaL_Ca_iz + I_CaL_Na_iz + I_CaL_K_iz) + (I_CaL_Ca_blk + I_CaL_Na_blk + I_CaL_K_blk) 
+
+Y_cc_iz = 1 - (Y_co_iz + Y_oo_iz + Y_oc_iz)
+dot(Y_co_iz) = CC.epsilon_minus * Y_cc_iz + CC.alpha_minus * Y_oo_iz - (CC.epsilon_plus_iz + CC.alpha_plus) * Y_co_iz
+dot(Y_oo_iz) = CC.alpha_plus * Y_co_iz + CC.epsilon_minus * Y_oc_iz - (CC.alpha_minus + CC.epsilon_plus_iz_loc) * Y_oo_iz
+dot(Y_oc_iz) = CC.epsilon_plus_iz_loc * Y_oo_iz + CC.alpha_plus * Y_cc_iz - (CC.epsilon_minus + CC.alpha_minus) * Y_oc_iz
+
+Y_cc_blk = 1 - (Y_co_blk + Y_oo_blk + Y_oc_blk)
+dot(Y_co_blk) = CC.epsilon_minus * Y_cc_blk + CC.alpha_minus * Y_oo_blk - (CC.epsilon_plus_blk + CC.alpha_plus) * Y_co_blk
+dot(Y_oo_blk) = CC.alpha_plus * Y_co_blk + CC.epsilon_minus * Y_oc_blk - (CC.alpha_minus + CC.epsilon_plus_blk_loc) * Y_oo_blk
+dot(Y_oc_blk) = CC.epsilon_plus_blk_loc * Y_oo_blk + CC.alpha_plus * Y_cc_blk - (CC.epsilon_minus + CC.alpha_minus) * Y_oc_blk
+
+# from huvec2
+[CKATP]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+p_O_KATP = 0.8 / (1.0 + (RTF.ATP_cyt / 0.1)^2)
+chi_KATP = 0.0236 * (RTF.K_o)^0.24
+I_KATP_K = RTF.G_KATP * (Vm - TIPC.E_K) * p_O_KATP * chi_KATP
+
+# from huvec2
+[CICA]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+P_l_Ca_K = RTF.P_l_Ca_Na
+p_O_blk = 1.0 / (1.0 + (0.0012 / BS.Ca_2_blk)^3)
+p_O_iz = 1.0 / (1.0 + (0.0012 / IDZ.Ca_2_iz10)^3)
+I_LCCa_Na_blk = RTF.P_l_Ca_Na * RTF.f_l_Ca_blk * LTCC.GHK_Na * p_O_blk
+I_LCCa_Na_iz = RTF.P_l_Ca_Na * RTF.f_l_Ca_iz * LTCC.GHK_Na * p_O_iz
+I_LCCa_K_blk = P_l_Ca_K * RTF.f_l_Ca_blk * LTCC.GHK_K * p_O_blk
+I_LCCa_K_iz = P_l_Ca_K * RTF.f_l_Ca_iz * LTCC.GHK_K * p_O_iz
+#I_LCCa = I_LCCa_Na_iz + I_LCCa_K_iz + I_LCCa_Na_blk + I_LCCa_K_blk
+
+# from huvec2
+[CK1]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+alpha_Mg = 12.0 * exp(-0.025 * (Vm - TIPC.E_K))
+beta_Mg = 28 * RTF.Mg_2_cyt * exp(0.025 * (Vm - TIPC.E_K))
+f_O = alpha_Mg / (alpha_Mg + beta_Mg)
+f_B = beta_Mg / (alpha_Mg + beta_Mg)
+po_Mg = f_O * f_O * f_O
+po_Mg1 = 3.0 * f_O * f_O * f_B
+po_Mg2 = 3.0 * f_O * f_B * f_B
+alpha_SPM = 0.17 * exp(-0.07 * (Vm - TIPC.E_K + 8 * RTF.Mg_2_cyt)) / (1.0 + 0.01 * exp(0.12 * (Vm - TIPC.E_K + 8 * RTF.Mg_2_cyt)))
+beta_SPM = 0.28 * RTF.SPM * exp(0.15 * (Vm - TIPC.E_K + 8 * RTF.Mg_2_cyt)) / (1.0 + 0.01 * exp(0.13 * (Vm - TIPC.E_K + 8 * RTF.Mg_2_cyt)))
+
+dot(Pb_spm) = beta_SPM * po_Mg * (1 - Pb_spm) - alpha_SPM * Pb_spm
+po_mode1 = RTF.f_mode1 * (1 - Pb_spm) * (po_Mg + (2.0 / 3.0) * po_Mg1 + (1.0 / 3.0) * po_Mg2)
+po_mode2 = (1 - RTF.f_mode1) / (1.0 + RTF.SPM / (40.0 * exp(-(Vm - TIPC.E_K) / 9.1)))
+p_O_K1 = po_mode1 + po_mode2
+chi_K1 = (RTF.K_o / 4.5)^0.4 / (1.0 + exp(-(RTF.K_o - 2.2) / 0.6))
+I_K1_K = RTF.G_K1 * chi_K1 * (Vm - TIPC.E_K) * p_O_K1
+
+# from huvec2
+[CKR]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+chi_r_infinity = 1 / (1 + exp(-(Vm + 8.337) / 6.789))
+tau_chi_r_fast = 12.98 + 1 / (0.3652 * exp((Vm - 31.66) / 3.869) + 0.00004123 * exp(-(Vm - 47.78) / 20.38))
+tau_chi_r_slow = 1.865 + 1 / (0.06629 * exp((Vm - 34.70) / 7.355) + 0.00001128 * exp(-(Vm - 19.74) / 25.94))
+A_chi_r_fast = 1 / (1 + exp((Vm + 4.81) / 38.21))
+A_chi_r_slow = 1 - A_chi_r_fast
+dot(chi_r_fast) = (chi_r_infinity - chi_r_fast) / tau_chi_r_fast
+dot(chi_r_slow) = (chi_r_infinity - chi_r_slow) / tau_chi_r_slow
+chi_r = A_chi_r_fast * chi_r_fast + A_chi_r_slow * chi_r_slow
+R_Kr = 1 / ((1 + exp((Vm + 55) / 75)) * (1 + exp((Vm - 10) / 30)))
+p_O_Kr = chi_r * R_Kr
+chi_Kr = sqrt(RTF.K_o / 4.5)
+I_Kr_K = RTF.G_Kr * chi_Kr * (Vm - TIPC.E_K) * p_O_Kr
+
+[SERCA]
+MgATP = 5e3
+alpha_1 = 25900 * MgATP
+alpha_2 = 2540 / (1 + (RTF.K_dCai / BS.Ca_2_blk)^1.7)
+alpha_3 = 5.35 / (1 + (IIC.Ca_2_SRup / RTF.K_dCasr)^1.7)
+beta_1 = 0.1972 / (1 + (BS.Ca_2_blk / RTF.K_dCai)^1.7)
+beta_2 = (25435 * NPC.MgADP) / (1 + (RTF.K_dCasr / IIC.Ca_2_SRup)^1.7)
+beta_3 = 149 * RTF.Pi
+v_cyc = (6.86 * (alpha_1 * alpha_2 * alpha_3 - beta_1 * beta_2 * beta_3)) / (alpha_2 * alpha_3 + beta_1 * alpha_3 + beta_1 * beta_2 + alpha_1 * alpha_3 + beta_2 * alpha_1 + beta_2 * beta_3 + alpha_1 * alpha_2 + beta_3 * beta_1 + beta_3 * alpha_2)
+J_SERCA = (RTF.Amp_SERCA * v_cyc / (2 * RTF.F)) * RTF.Sc_Cell
+
+# Cell volume
+[CV]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+Vcell = 115 * 20 * 8
+Vblk = 0.65 * Vcell
+Viz = 0.035 * Vcell
+Vjnc = 0.011 * Vcell
+Vcyt = Vjnc + Viz + Vblk
+VSR = 0.035 * Vcell
+VSRup = 0.6 * VSR
+VSRrl = 0.4 * VSR
+
+# external_ion_concentrations
+[EIC]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+Na_o = 140
+Ca_o = 1.8
+K_o = 4.5
+
+# Substrates (fixed)
+[SS]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+MgATPcyt = 6.677
+MgADPcyt = 0.0228
+Picyt = 0.443
+
+# internal_ion_concentrations
+[IIC]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+CMDN_max = 0.05
+K_mCMDN = 0.00238
+Vi = 8000
+Cm = 177
+b1 = (CMDN_max - Ca_Total) + K_mCMDN
+c1 = K_mCMDN * Ca_Total
+Ca_i = (sqrt(b1^2 + 4 * c1) - b1) / 2
+#i_net_Na = SC.i_Na_Na + STDPC.i_Ks_Na + TOC.i_to_Na + LTCC.i_CaL_Na + BNC.i_bNSC_Na + BIC.i_lCa_Na + 3 * SPP.i_NaK + 3 * SCE.i_NaCa
+#i_net_K = TIPC.i_K1 + RTDPC.i_Kr + TOC.i_to_K + BKATP.i_KATP + STDPC.i_Ks_K + SC.i_Na_K + LTCC.i_CaL_K + BNC.i_bNSC_K + BIC.i_lCa_K + BKPI.i_Kpl - (2 * SPP.i_NaK)
+i_net_Ca = LTCC.i_CaL_Ca + TTCC.i_Ca_T + BCC2.i_Cab - (2 * SCE.i_NaCa)
+dot(Ca_2_tot_jnc) = ((membrane.I_tot_Ca_jnc * Cm) / (CV.Vjnc * 2 * F)) + (CARU.J_Ca_rel / CV.Vjnc) - (BID.J_Ca_jnciz / CV.Vjnc)
+dot(Ca_2_tot_iz) = ((membrane.I_tot_Ca_iz * Cm) / (CV.Viz * 2 * F)) + (BID.J_Ca_jnciz / CV.Viz) - (BID.J_Ca_izblk / CV.Viz)
+dot(Ca_2_tot_blk) = ((membrane.I_tot_Ca_blk * Cm) / (CV.Vblk * 2 * F)) + (SERCA.J_SERCA / CV.Vblk) - (BID.J_Ca_izblk / CV.Vblk) - CTFS.J_CaTnC_3Ca
+dot(Ca_2_SRup) = (SERCA.J_SERCA / OTHER.V_SRup) - (CTFS.J_trans_SR / OTHER.V_SRup)
+dot(Ca_2_tot_SRrl) = (CTFS.J_trans_SR / OTHER.V_SRrl) - (RCAC.J_rel_SR / OTHER.V_SRrl)
+dot(Na_i) = (membrane.I_tot_Na * Cm) / (OTHER.V_cyt * F)
+dot(K_i) = ((membrane.I_tot_K + stimulus.i_stim) * Cm) / (OTHER.V_cyt * F)
+dot(Ca_Total) = -((i_net_Ca - SRCP.i_SR_U - RC.i_RyR - SRLC.i_SR_L) / (2 * F * Vi)) + NM.dCaidt
+
+# Boundary ion diffusion
+[BID]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+J_Ca_jnciz = G_dCa_Jnciz * (JNC.Ca_jnc - IZ.Ca_iz)
+J_Ca_izblk = G_dCa_izblk * (IZ.Ca_iz - LORO.Ca_blk)
+G_dCa_Jnciz = 3215.8
+G_dCa_izblk = 2076.1
+
+# Ca2+ buffering
+[CB]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+B_Total_CaM = 0.024
+B_Total_TnCh = 0.12
+B_Total_SR = 0.0171
+B_Total_H_iz = 0.2178
+B_Total_L_iz = 0.6078
+B_Total_H_jnc = 0.398
+B_Total_L_jnc = 1.1095
+B_Total_CSQN = 3
+dot(CaMCa) = (RCCB.k_on_CaM * LORO.Ca_blk * (B_Total_CaM - CaMCa)) - (RCCB.k_off_CaM * CaMCa)
+dot(TnChCa) = (RCCB.k_on_TnCh * LORO.Ca_blk * (B_Total_TnCh - TnChCa)) - (RCCB.k_off_TnCh * TnChCa)
+dot(SRCa) = (RCCB.k_on_SR * LORO.Ca_blk * (B_Total_SR - SRCa)) - (RCCB.k_off_SR * SRCa)
+
+# Intermediate zone (iz)
+[IZ]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+#L_free_iz = CB.B_Total_L_iz / (1 + (Ca_iz / K_dL_iz))
+#K_dL_iz = RCCB.k_off_L_iz / RCCB.k_on_L_iz
+#H_free_iz = CB.B_Total_H_iz / (1 + (Ca_iz / K_dH_iz))
+#K_dH_iz = RCCB.k_off_H_iz / RCCB.k_on_H_iz
+#dot(Ca_iz) = Ca_tot_iz / (1 + (Lf_iz / K_dL_iz) + (Hf_iz / K_dH_iz))
+
+Lf_iz = CB.B_Total_L_iz / (1 + (Ca_iz / K_dL_iz))
+K_dL_iz = RCCB.k_off_L_iz / RCCB.k_on_L_iz
+Hf_iz = CB.B_Total_H_iz / (1 + (Ca_iz / K_dH_iz))
+K_dH_iz = RCCB.k_off_H_iz / RCCB.k_on_H_iz
+dot(Ca_iz) = IIC.Ca_2_tot_iz / (1 + (Lf_iz / K_dL_iz) + (Hf_iz / K_dH_iz))
+
+# Junctional space (jnc)
+[JNC]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+#L_free_jnc = CB.B_Total_L_jnc / (1 + (Ca_jnc / K_dL_jnc))
+#K_dL_jnc = RCCB.k_off_L_jnc / RCCB.k_on_L_jnc
+#H_free_jnc = CB.B_Total_H_jnc / (1 + (Ca_jnc / K_dH_jnc))
+#K_dH_jnc = RCCB.k_off_H_jnc / RCCB.k_on_H_jnc
+#dot(Ca_jnc) = Ca_tot_jnc / (1 + (Lf_jnc / K_dL_jnc) + (Hf_jnc / K_dH_jnc))
+
+Lf_jnc = CB.B_Total_L_jnc / (1 + (Ca_jnc / K_dL_jnc))
+K_dL_jnc = RCCB.k_off_L_jnc / RCCB.k_on_L_jnc
+Hf_jnc = CB.B_Total_H_jnc / (1 + (Ca_jnc / K_dH_jnc))
+K_dH_jnc = RCCB.k_off_H_jnc / RCCB.k_on_H_jnc
+dot(Ca_jnc) = IIC.Ca_2_tot_jnc / (1 + (Lf_jnc / K_dL_jnc) + (Hf_jnc / K_dH_jnc))
+
+# Release site of the SR (SRrl)
+[SRRL]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+K_d_CSQN_Ca = RCCB.k_off_CSQN / RCCB.k_on_CSQN
+a = 1
+b = CB.B_Total_CSQN - IIC.Ca_2_tot_SRrl + K_d_CSQN_Ca
+c = K_d_CSQN_Ca * IIC.Ca_2_tot_SRrl
+Ca_SRrl = (-b + sqrt(b^2 - 4 * a * c)) / (2 * a)
+
+# Rate constants of Ca2+ buffers
+[RCCB]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+k_off_CaM = 0.238
+k_on_CaM = 34
+k_off_TnCh = 0.000032
+k_on_TnCh = 2.37
+k_off_SR = 0.06
+k_on_SR = 100
+k_off_L_iz = 1.3
+k_on_L_iz = 100
+k_off_H_iz = 0.03
+k_on_H_iz = 100
+k_off_L_jnc = 1.3
+k_on_L_jnc = 100
+k_off_H_jnc = 0.03
+k_on_H_jnc = 100
+k_off_CSQN = 65
+k_on_CSQN = 100
+
+# constant_field_equations
+[CFE]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+CF_Na = if(Vm == 0, -EIC.Na_o, ((F * Vm) / (R * T)) * (IIC.Na_i - (EIC.Na_o * exp((-F * Vm) / (R * T)))) / (1 - exp((-F * Vm) / (R * T))))
+CF_Ca = if(Vm == 0, -EIC.Ca_o, ((2 * F * Vm) / (R * T)) * (IIC.Ca_i - (EIC.Ca_o * exp((-2 * F * Vm) / (R * T)))) / (1 - exp((-2 * F * Vm) / (R * T))))
+CF_K = if(Vm == 0, IIC.K_i, ((F * Vm) / (R * T)) * (IIC.K_i - (EIC.K_o * exp((-F * Vm) / (R * T)))) / (1 - exp((-F * Vm) / (R * T))))
+
+# ATP_production
+[AP]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+ProducingRate_Max = 0.003
+Adenosine_Total = 5
+dot(ATPi) =  (ProducingRate_Max * (Adenosine_Total - ATPi) + NM.dATPdt - (SPP.i_NaK / (F * IIC.Vi))) + (SRCP.i_SR_U / (4 * F * IIC.Vi))
+
+# sodium_current
+[SC]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+#i_Na_Na = P_Na * CFE.CF_Na * SCVDG.p_AP_Na * SCUSG.y
+#i_Na_K = 0.1 * P_Na * CFE.CF_K * SCVDG.p_AP_Na * SCUSG.y
+f_L = 0.1575
+P_Na = 6.756
+#I_Na = TC.I_NaT + LC.I_NaL
+
+# from Huvec2
+[CN]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+f_C_Na = 1 / (1 + exp(-(Vm + 48) / 7))
+k_C2O = 1 / (0.0025 * exp(Vm / -8.0) + 0.15 * exp(Vm / -100.0))
+k_OC = 1 / (30 * exp(Vm / 12.0) + 0.53 * exp(Vm / 50.0))
+k_OI2 = 1 / (0.0433 * exp(Vm / -27.0) + 0.34 * exp(Vm / -2000.0))
+k_C2I2 = 0.5 / (1.0 + (RTF.k_I2O * k_OC) / (k_OI2 * k_C2O))
+k_I2C = 0.5 - k_C2I2
+k_Isb = 1 / (300000.0 * exp(Vm / 10.0) + 50000 * exp(Vm / 16.0))
+k_Isf = 1 / (0.016 * exp(Vm / -9.9) + 8.0 * exp(Vm / -45.0))
+k_OI1 = k_OI2
+k_I1C = k_I2C
+k_C2I1 = k_C2I2
+p_C_NaT = 1.0 - TC.p_I_2_NaT - TC.p_I_s_NaT - p_O_NaT
+dot(p_O_NaT) = RTF.k_I2O * TC.p_I_2_NaT + TC.f_C_Na * TC.k_C2O * p_C_NaT - (TC.k_OC + k_OI2) * p_O_NaT
+p_C_NaL = 1.0 - LC.p_I_2_NaL - LC.p_I_s_NaL - LC.p_I_1_NaL - p_O_NaL
+dot(p_O_NaL) = RTF.k_I1O * LC.p_I_1_NaL + TC.f_C_Na * TC.k_C2O * p_C_NaL - (TC.k_OC + k_OI1) * p_O_NaL
+
+I_NaT_Na = (1 - RTF.f_LSM) * SC.P_Na * LTCC.GHK_Na * p_O_NaT
+I_NaT_K = (1 - RTF.f_LSM) * SC.P_Na * 0.1 * LTCC.GHK_K * p_O_NaT
+I_NaL_Na = RTF.f_LSM * SC.P_Na * LTCC.GHK_Na * p_O_NaL
+I_NaL_K = RTF.f_LSM * SC.P_Na * 0.1 * LTCC.GHK_K * p_O_NaL
+
+
+# Transient component
+[TC]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+#I_NaT = (1 - SC.f_L) * SC.P_Na * (LTCC.GHK_Na + 0.1 * LTCC.GHK_K) * p_O_NaT
+dot(p_C_NaT) = k_OC * p_O_NaT + k_I2C * p_I_2_NaT + k_Isb * p_I_s_NaT - (k_Isf + f_C_Na * (k_C2O + k_C2I2)) * p_C_NaT
+dot(p_O_NaT) = k_I2O * p_I_2_NaT + f_C_Na * k_C2O * p_C_NaT - (k_OC + k_I2O) * p_O_NaT
+dot(p_I_2_NaT) = f_C_Na * k_C2I2 * p_C_NaT + k_OI2 * p_O_NaT + k_Isb * p_I_s_NaT - (k_I2C + k_I2O + k_Isf) * p_I_2_NaT
+dot(p_I_s_NaT) = k_Isf * p_I_2_NaT + k_Isf * p_C_NaT - 2 * k_Isb * p_I_s_NaT
+f_C_Na = 1 / (1 + exp(-(Vm + 48) / 7))
+k_C2O = 1 / (0.0025 * exp(Vm / -8) + 0.15 * exp(Vm / -100))
+k_OC = 1 / (30 * exp(Vm / 12) + 0.53 * exp(Vm / 50))
+k_OI2 = 1 / (0.0433 * exp(Vm / -27) + 0.34 * exp(Vm / -2000))
+k_I2O = 0.0001312
+k_C2I2 = 0.5 / (1 + ((k_I2O * k_OC) / (k_OI2 * k_C2O)))
+k_I2C = 0.5 - k_C2I2
+k_Isb = 1 / (300000 * exp(Vm / 10) + 50000 * exp(Vm / 16))
+k_Isf = 1 / (0.016 * exp(Vm / -9.9) + 8 * exp(Vm / -45))
+
+# Late component
+[LC]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+#I_NaL = SC.f_L * SC.P_Na * (LTCC.GHK_Na + 0.1 * LTCC.GHK_K) * p_O_NaL 
+dot(p_C_NaL) = TC.k_OC * p_O_NaL + k_I1C * p_I_1_NaL + TC.k_I2C * p_I_2_NaL - TC.k_Isb * p_I_s_NaL - (TC.k_Isf + TC.f_C_Na * (TC.k_C2O + TC.k_C2I2 + k_C2I1)) * p_C_NaL
+dot(p_O_NaL) = k_I1O * p_I_1_NaL + TC.f_C_Na * TC.k_C2O * p_C_NaL - (TC.k_OC + k_OI1) * p_O_NaL
+dot(p_I_1_NaL) = k_OI1 * p_O_NaL + TC.f_C_Na * k_C2I1 * p_C_NaL - (k_I1O + k_I1C + k_I1I2) * p_I_1_NaL 
+dot(p_I_2_NaL) = TC.f_C_Na * TC.k_C2I2 * p_C_NaL + k_I1I2 * p_I_1_NaL + TC.k_Isb * p_I_s_NaL - (TC.k_I2C + TC.k_Isf) * p_I_2_NaL
+dot(p_I_s_NaL) = TC.k_Isf * p_I_2_NaL + TC.k_Isf * p_C_NaL - 2 * TC.k_Isb * p_I_s_NaL
+k_I1I2 = 0.00534
+k_OI1 = TC.k_OI2
+k_I1O = 0.01
+k_I1C = TC.k_I2C
+k_C2I1 = TC.k_C2I2
+
+# sodium_current_voltage_dependent_gate
+[SCVDG]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+k_AI_AP = 0.0000875
+p_RI_Na = 1 - p_RP_Na - p_AP_Na - p_AI_Na
+k_RP_AP = 1 / ((0.1027 * exp(-Vm / 8)) + (0.25 * exp(-Vm / 50)))
+k_AP_RP = 1 / ((26 * exp(Vm / 17)) + (0.02 * exp(Vm / 800)))
+k_AP_AI = 1 / (0.8 * exp(-Vm / 400))
+k_AI_RI = 1 / ((1300 * exp(Vm / 20)) + (0.04 * exp(Vm / 800)))
+k_RI_AI = 1 / ((0.0001027 * exp(-Vm / 8)) + (5 * exp(-Vm / 400)))
+k_RP_RI = 0.01 / (1 + ((k_AI_AP * k_AP_RP * k_RI_AI) / (k_AP_AI * k_RP_AP * k_AI_RI)))
+k_RI_RP = 0.01 - k_RP_RI
+dot(p_RP_Na) = p_AP_Na * k_AP_RP + p_RI_Na * k_RI_RP - (p_RP_Na * (k_RP_RI + k_RP_AP))
+dot(p_AP_Na) = p_RP_Na * k_RP_AP + p_AI_Na * k_AI_AP - (p_AP_Na * (k_AP_RP + k_AP_AI))
+dot(p_AI_Na) = p_RI_Na * k_RI_AI + p_AP_Na * k_AP_AI - (p_AI_Na * (k_AI_RI + k_AI_AP))
+
+# sodium_current_ultra_slow_gate 
+[SCUSG]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+alpha_y = 1 / ((9000000000 * exp(Vm / 5)) + (8000 * exp(Vm / 100)))
+beta_y = 1 / ((0.014 * exp(-Vm / 5)) + (4000 * exp(-Vm / 100)))
+dot(y) = alpha_y * (1 - y) - (beta_y * y)
+
+# L_type_Ca_channel
+[LTCC]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+P_CaL = 8712
+i_CaL_Ca = P_CaL * CFE.CF_Ca * p_open_CaL
+i_CaL_Na = 0.0000185 * P_CaL * CFE.CF_Na * p_open_CaL
+i_CaL_K = 0.000365 * P_CaL * CFE.CF_K * p_open_CaL
+p_open_CaL = (CCV.p_AP_CaL * (LCC.p_U + LCC.p_UCa) * LCUS.y) / (1 + (1.4 / AP.ATPi)^3)
+#GHK_Ca = ((Z_Ca * F * Vm) / (R * T)) * (IIC.Ca_i - (EIC.Ca_o * exp((-Z_Ca * F * Vm) / R * T) / (1 - exp(-Z_Ca * F * Vm / R * T)))) 
+#GHK_Na = ((Z_Na * F * Vm) / (R * T)) * (IIC.Na_i - (EIC.Na_o * exp((-Z_Na * F * Vm) / R * T) / (1 - exp(-Z_Na * F * Vm / R * T)))) 
+#GHK_K = ((Z_K * F * Vm) / (R * T)) * (K_i - (K_o * exp((-Z_K * F * Vm) / R * T) / (1 - exp(-Z_K * F * Vm / R * T)))) 
+#GHK_Ca_blk = ((Z_Ca_blk * F * Vm) / (R * T)) * (Ca_blk_i - (Ca_blk_o * exp((-Z_Ca_blk * F * Vm) / R * T) / (1 - exp(-Z_Ca_blk * F * Vm / R * T)))) 
+#GHK_Ca_iz = ((Z_Ca_iz * F * Vm) / (R * T)) * (Ca_iz_i - (Ca_iz_o * exp((-Z_Ca_iz * F * Vm) / R * T) / (1 - exp(-Z_Ca_iz * F * Vm / R * T))))
+#GHK_Ca_jnc = ((Z_Ca_jnc * F * Vm) / (R * T)) * (Ca_jnc_i - (Ca_jnc_o * exp((-Z_Ca_jnc * F * Vm) / R * T) / (1 - exp(-Z_Ca_jnc * F * Vm / R * T))))
+#GHK_Na_blk = ((Z_Na_blk * F * Vm) / (R * T)) * (Na_blk_i - (Na_blk_o * exp((-Z_Na_blk * F * Vm) / R * T) / (1 - exp(-Z_Na_blk * F * Vm / R * T))))
+#GHK_Na_iz = ((Z_Na_iz * F * Vm) / (R * T)) * (Na_iz_i - (Na_iz_o * exp((-Z_Na_iz * F * Vm) / R * T) / (1 - exp(-Z_Na_iz * F * Vm / R * T))))
+#GHK_Na_jnc = ((Z_Na_jnc * F * Vm) / (R * T)) * (Na_jnc_i - (Na_jnc_o * exp((-Z_Na_jnc * F * Vm) / R * T) / (1 - exp(-Z_Na_jnc * F * Vm / R * T))))
+#GHK_K_blk = ((Z_K_blk * F * Vm) / (R * T)) * (K_blk_i - (K_blk_o * exp((-Z_K_blk * F * Vm) / R * T) / (1 - exp(-Z_K_blk * F * Vm / R * T))))
+#GHK_K_iz = ((Z_K_iz * F * Vm) / (R * T)) * (K_iz_i - (K_iz_o * exp((-Z_K_iz * F * Vm) / R * T) / (1 - exp(-Z_K_iz * F * Vm / R * T))))
+#GHK_K_jnc = ((Z_K_jnc * F * Vm) / (R * T)) * (K_jnc_i - (K_jnc_o * exp((-Z_K_jnc * F * Vm) / R * T) / (1 - exp(-Z_K_jnc * F * Vm / R * T))))
+
+#ATP = 6
+#I_CaL_Ca_blk = FOI.f_CaL_blk * CF.P_CaL_Ca * GHK_Ca_blk * pO_CaL_blk * (1 / (1 + (1.4 / ATP)^3))
+#I_CaL_Ca_iz = FOI.f_CaL_iz * CF.P_CaL_Ca * GHK_Ca_iz * pO_CaL_iz * (1 / (1 + (1.4 / ATP)^3))
+#I_CaL_Ca_jnc = FOI.f_CaL_jnc * CF.P_CaL_Ca * GHK_Ca_jnc * pO_CaL_jnc * (1 / (1 + (1.4 / ATP)^3))
+#I_CaL_Na_blk = FOI.f_CaL_blk * CF.P_CaL_Na * GHK_Na_blk * pO_CaL_blk * (1 / (1 + (1.4 / ATP)^3))
+#I_CaL_Na_iz = FOI.f_CaL_iz * CF.P_CaL_Na * GHK_Na_iz * pO_CaL_iz * (1 / (1 + (1.4 / ATP)^3))
+#I_CaL_Na_jnc = FOI.f_CaL_jnc * CF.P_CaL_Na * GHK_Na_jnc * pO_CaL_jnc * (1 / (1 + (1.4 / ATP)^3))
+#I_CaL_K_blk = FOI.f_CaL_blk * CF.P_CaL_K * GHK_K_blk * pO_CaL_blk * (1 / (1 + (1.4 / ATP)^3))
+#I_CaL_K_iz = FOI.f_CaL_iz * CF.P_CaL_K * GHK_K_iz * pO_CaL_iz * (1 / (1 + (1.4 / ATP)^3))
+#I_CaL_K_jnc = FOI.f_CaL_jnc * CF.P_CaL_K * GHK_K_jnc * pO_CaL_jnc * (1 / (1 + (1.4 / ATP)^3))
+
+p_O_LCC = CARU.Y_ooo + CARU.Y_ooc
+
+ATPfactor = 1 / (1 + (1.4 / RTF.ATP)^3)
+
+GHK_Ca_LR = (2 * Vm) / (RTF.R * RTF.T / RTF.F) * (CARU.Ca_2_nd_LR - RTF.Ca_o * exp((-2 * Vm) / (RTF.R * RTF.T / RTF.F))) / (1 - exp((-2 * Vm) / (RTF.R * RTF.T / RTF.F)))
+GHK_Ca_L0 = (2 * Vm) / (RTF.R * RTF.T / RTF.F) * (CARU.Ca_2_nd_L0 - RTF.Ca_o * exp((-2 * Vm) / (RTF.R * RTF.T / RTF.F))) / (1 - exp((-2 * Vm) / (RTF.R * RTF.T / RTF.F)))
+GHK_Ca_iz = (2 * Vm) / (RTF.R * RTF.T / RTF.F) * (IDZ.Ca_2_iz10 - RTF.Ca_o * exp((-2 * Vm) / (RTF.R * RTF.T / RTF.F))) / (1 - exp((-2 * Vm) / (RTF.R * RTF.T / RTF.F)))
+GHK_Ca_blk = (2 * Vm) / (RTF.R * RTF.T / RTF.F) * (BS.Ca_2_blk - RTF.Ca_o * exp((-2 * Vm) / (RTF.R * RTF.T / RTF.F))) / (1 - exp((-2 * Vm) / (RTF.R * RTF.T / RTF.F)))
+GHK_Na = ((1 * F * Vm) / (R * T)) * (IIC.Na_i - (EIC.Na_o * exp((-1 * F * Vm) / (R * T)) / (1 - exp((-1 * F * Vm) / (R * T))))) 
+GHK_K = ((1 * F * Vm) / (R * T)) * (IIC.K_i - (EIC.K_o * exp((-1 * F * Vm) / (R * T)) / (1 - exp((-1 * F * Vm) / (R * T))))) 
+GHK_Ca = ((1 * F * Vm) / (R * T)) * (IIC.Ca_i - (EIC.Ca_o * exp((-1 * F * Vm) / (R * T)) / (1 - exp((-1 * F * Vm) / (R * T)))))  
+
+I_CaL_Ca_blk = RTF.f_CaL_blk * RTF.P_CaL_Ca * GHK_Ca_blk * CC.Y_oo_blk * ATPfactor
+I_CaL_Ca_iz = RTF.f_CaL_iz * RTF.P_CaL_Ca * GHK_Ca_iz * CC.Y_oo_iz * ATPfactor
+I_CaL_Ca_LR = RTF.f_CaL_jnc * RTF.P_CaL_Ca * GHK_Ca_LR * CARU.Y_ooo * ATPfactor
+I_CaL_Ca_L0 = RTF.f_CaL_jnc * RTF.P_CaL_Ca * GHK_Ca_L0 * CARU.Y_ooc * ATPfactor
+I_CaL_Ca_jnc = I_CaL_Ca_LR + I_CaL_Ca_L0
+I_CaL_Na_blk = RTF.f_CaL_blk * OTHER.P_CaL_Na * CC.GHK_Na * CC.Y_oo_blk * ATPfactor
+I_CaL_Na_iz = RTF.f_CaL_iz * OTHER.P_CaL_Na * CC.GHK_Na * CC.Y_oo_iz * ATPfactor
+I_CaL_Na_jnc = RTF.f_CaL_jnc * OTHER.P_CaL_Na * CC.GHK_Na * p_O_LCC * ATPfactor
+I_CaL_K_blk = RTF.f_CaL_blk * OTHER.P_CaL_K * CC.GHK_K * CC.Y_oo_blk * ATPfactor
+I_CaL_K_iz = RTF.f_CaL_iz * OTHER.P_CaL_K * CC.GHK_K * CC.Y_oo_iz * ATPfactor
+I_CaL_K_jnc = RTF.f_CaL_jnc * OTHER.P_CaL_K * CC.GHK_K * p_O_LCC * ATPfactor
+
+I_CaL = (I_CaL_Ca_jnc + I_CaL_Na_jnc + I_CaL_K_jnc) + (I_CaL_Ca_iz + I_CaL_Na_iz + I_CaL_K_iz) + (I_CaL_Ca_blk + I_CaL_Na_blk + I_CaL_K_blk)
+
+# Fraction of ICaL
+[FOI]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+f_CaL_blk = 0.1
+f_CaL_iz = 0.15
+f_CaL_jnc = 0.75
+
+# Converting factors
+[CF]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+P_CaL_Ca = 14.21
+P_CaL_Na = 0.0000185 * P_CaL_Ca
+P_CaL_K = 0.001468 * P_CaL_Ca
+
+# V-gate
+[VG]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+a0 = 1 / (5.55 * exp(-(Vm + 2) / 7) + 0.35 * exp(-(Vm + 2) / 3500))
+a1 = 1 / (4.35 * exp(-(Vm + 2) / 15) + 1.35 * exp((Vm + 2) / 100))
+
+# Ca2+ gate
+[CG]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+tL0 = 1885
+tL1 = 1495
+K_L = 0.00022
+ipsilon0 = (LORO.Ca_nd * VG.a0) / (tL0 * K_L)
+ipsilon1 = (VG.a0 / tL1) + (6 * (exp((Vm + 48) / -4.5) + 0.0225)) / (tL1 * (exp((Vm + 48) / -4.5) + 1)) 
+
+# L_type_Ca_channel_voltage_dependent_gate
+[CCV]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+k_AP_AI = 0.004
+k_AI_AP = 0.001
+p_RI_CaL = 1 - p_AP_CaL - p_RP_CaL - p_AI_CaL
+k_RP_AP = 1 / ((0.27 * exp(-Vm / 5.9)) + (1.5 * exp(-Vm / 65)))
+k_AP_RP = 1 / ((480 * exp(Vm / 7)) + (2.2 * exp(Vm / 65)))
+k_RI_AI = 1 / ((0.0018 * exp(-Vm / 7.4)) + (2 * exp(-Vm / 100)))
+k_AI_RI = 1 / ((2200000 * exp(Vm / 7.4)) + (11 * exp(Vm / 100)))
+k_RP_RI = 0.04 / (1 + (k_AI_AP * k_AP_RP * k_RI_AI) / (k_AP_AI * k_RP_AP * k_AI_RI))
+k_RI_RP = 0.04 - k_RP_RI
+dot(p_RP_CaL) = p_AP_CaL * k_AP_RP + p_RI_CaL * k_RI_RP - (p_RP_CaL * (k_RP_RI + k_RP_AP))
+dot(p_AP_CaL) = p_RP_CaL * k_RP_AP + p_AI_CaL * k_AI_AP - (p_AP_CaL * (k_AP_RP + k_AP_AI))
+dot(p_AI_CaL) = p_RI_CaL * k_RI_AI + p_AP_CaL * k_AP_AI - (p_AI_CaL * (k_AI_RI + k_AI_AP))
+
+# L_type_Ca_channel_Ca_dependent_gate
+[LCC]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+k_U_UCa = 6.954
+k_C_CCa = 6.954
+k_C_U = 0.143
+k_U_C = 0.35
+k_CCa_UCa = 0.0003
+k_UCa_CCa = 0.35
+k_CCa_C = 0.0042
+I_CaL = 0.0676 * CFE.CF_Ca
+CaDiadic = I_CaL * LTCC.p_open_CaL 
+Cacm = IIC.Ca_i - (0.3 * I_CaL)
+CaEffC = Cacm * CCV.p_AP_CaL
+CaEffU = CaEffC + IIC.Ca_i * (1 - CCV.p_AP_CaL)
+k_UUCa_Ca = k_U_UCa * CaEffU
+k_CCCa_Ca = k_C_CCa * CaEffC
+p_CCa = 1 - p_C - p_U - p_UCa
+k_UCa_U = (k_CCa_C * k_C_U * k_U_UCa * k_UCa_CCa) / (k_U_C * k_C_CCa * k_CCa_UCa)
+dot(p_U) = p_C * k_C_U + p_UCa * k_UCa_U - (p_U * (k_UUCa_Ca + k_U_C))
+dot(p_UCa) = p_U * k_UUCa_Ca + p_CCa * k_CCa_UCa - (p_UCa * (k_UCa_CCa + k_UCa_U))
+dot(p_C) = p_CCa * k_CCa_C + p_U * k_U_C - (p_C * (k_C_U + k_C_CCa * Cacm * CCV.p_AP_CaL))
+
+# L_type_Ca_channel_ultra_slow_gate
+[LCUS]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+alpha_y = 1 / ((250000 * exp(Vm / 9)) + (58 * exp(Vm / 65)))
+beta_y = 1 / ((1800 * exp(-Vm / 14)) + (66 * exp(-Vm / 65)))
+dot(y) = alpha_y * (1 - y) - (beta_y * y)
+
+# T_type_Ca_channel
+[TTCC]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+P_CaT = 612
+i_Ca_T = P_CaT * CFE.CF_Ca * TTCC1.y1 * TTCC2.y2
+
+# T_type_Ca_channel_y1_gate
+[TTCC1]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+alpha_y1 = 1 / ((0.019 * exp(-Vm / 5.6)) + (0.82 * exp(-Vm / 250)))
+beta_y1 = 1 / ((40 * exp(Vm / 6.3)) + (1.5 * exp(Vm / 10000)))
+dot(y1) = alpha_y1 * (1 - y1) - (beta_y1 * y1)
+
+# T_type_Ca_channel_y2_gate
+[TTCC2]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+alpha_y2 = 1 / ((62000 * exp(Vm / 10.1)) + (30 * exp(Vm / 3000)))
+beta_y2 = 1 / (0.0006 * exp(-Vm / 6.7) + (1.2 * exp(-Vm / 25)))
+dot(y2) = alpha_y2 * (1 - y2) - (beta_y2 * y2)
+
+# time_independent_potassium_current
+[TIPC]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+P_K1_0 = 1.353
+E_K = ((R * T) / F) * log(EIC.K_o / IIC.K_i)
+G_K1 = (P_K1_0 * (EIC.K_o / 4.5)^0.4) / (1 + exp(-(EIC.K_o - 2.2) / 0.6))
+I_K1_K_cyt = G_K1 * (Vm - E_K) * p_O_K1
+p_O_K1 = po_mode1 + po_mode2
+fmode1 = 0.9
+po_mode1 = fmode1 * (1 - TSB.Pb_spm) * (TMB.po_Mg + (2/3) * TMB.po_Mg1 + (1/3) * TMB.po_Mg2)
+SPM = 5
+po_mode2 = (1 - fmode1) / (1 + (SPM / (40 * exp(-(Vm - E_K) / 9.1))))
+fB = mu / (mu + lambda)
+fO = lambda / (mu + lambda)
+fO2 = 2 * fO^2 * fB^2 
+fO3 = (8/3) * fO^3 * fB
+fO4 = fO^4
+mu = (0.75 * exp(0.035 * (Vm - TIPC.E_K - 10))) / (1 + exp(0.015 * (Vm - TIPC.E_K - 140)))
+lambda = (3 * exp(-0.048 * (Vm - TIPC.E_K - 10)) * (1 + exp(0.064 * (Vm - TIPC.E_K - 38)))) / (1 + exp(0.03 * (Vm - TIPC.E_K - 70)))
+#I_K1 = G_K1 * (Vm - TIPC.E_K) * (fO4 + fO3 + fO2) * TIPCY.y
+
+# The Mg2+-block in the mode1
+[TMB]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+po_Mg = fO * fO * fO
+po_Mg1 = 3 * fO * fO * fB
+po_Mg2 = 3 * fO * fB * fB
+fO = a_Mg / (a_Mg + B_Mg)
+fB = B_Mg / (a_Mg + B_Mg)
+a_Mg = 12 * exp(-0.025 * (Vm - TIPC.E_K))
+B_Mg = 28 * Mg_cyt * exp(0.025 * (Vm - TIPC.E_K))
+Mg_cyt = 0.8
+
+# The SPM-block in the mode1
+[TSB]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+dot(Pb_spm) = B_SPM * TMB.po_Mg * (1 - Pb_spm) - a_SPM * Pb_spm
+a_SPM = (0.17 * exp(-0.07 * ((Vm - TIPC.E_K) + 8 * TMB.Mg_cyt))) / (1 + 0.01 * exp(0.12 * ((Vm - TIPC.E_K) + 8 * TMB.Mg_cyt)))
+B_SPM = (0.28 * TIPC.SPM * exp(0.15 * ((Vm - TIPC.E_K) + 8 * TMB.Mg_cyt))) / (1 + 0.01 * exp(0.13 * ((Vm - TIPC.E_K) + 8 * TMB.Mg_cyt)))
+# Pb_spm = (B_SPM * TMB.po_Mg) / (a_SPM + (B_SPM * TMB.po_Mg))
+
+# time_independent_potassium_current_y_gate
+#[TIPCY]
+#use membrane.Vm, membrane.R, membrane.T, membrane.F
+#alpha_y = 1 / ((8000 * exp((Vm - TIPC.E_K - 97) / 8.5)) + (7 * exp((Vm - TIPC.E_K - 97) / 300)))
+#beta_y =  TIPC.fO^4 / ((0.00014 * exp(-(Vm - TIPC.E_K - 97) / 9.1)) + (0.2 * exp(-(Vm - TIPC.E_K - 97) / 500)))
+#dot(y) = alpha_y * (1 - y) - (beta_y * y)
+
+# rapid_time_dependent_potassium_current
+[RTDPC]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+g_Kr= 0.01
+#I_Kr = g_Kr * (Vm - TIPC.E_K) * TGP.p_O_Kr * (EIC.K_o / 4.5)^0.2 
+#I_Kr = g_Kr * (Vm - TIPC.E_K) * CKR.p_O_Kr * (EIC.K_o / 4.5)^0.2 
+
+# three gating parameters, y1, y2 and y3
+[TGP]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+p_O_Kr = (0.6 * y1 + 0.4 + y2) * y3
+dot(y1) = a_y1 * (1 - y1) - B_y1 * y1
+dot(y2) = a_y2 * (1 - y2) - B_y2 * y2
+dot(y3) = a_y3 * (1 - y3) - B_y3 * y3
+a_y1 = 1 / (35 * exp(-Vm / 10.5) + 75 * exp(-Vm / 100))
+B_y1 = 1 / (470 * exp(Vm / 8.3) + 220 * exp(Vm / 29))
+a_y2 = 1 / (350 * exp(-Vm / 10.5) + 300 * exp(-Vm / 100))
+B_y2 = 1 / (1850 * exp(Vm / 8.3) + 2200 * exp(Vm / 29))
+a_y3 = 1 / (0.015 * exp(Vm / 6) + 7 * exp(Vm / 60))
+B_y3 = 1 / (0.114 * exp(-Vm / 9.2) + 2.3 * exp(-Vm / 1000))
+
+# rapid_time_dependent_potassium_current_y1_gate
+#[RTDPC1]
+#use membrane.Vm, membrane.R, membrane.T, membrane.F
+#alpha_y1 = 1 / ((20 * exp(-Vm / 11.5)) + (5 * exp(-Vm / 300)))
+#beta_y1 = (1 / ((160 * exp(Vm / 28)) + (200 * exp(Vm / 1000)))) + (1 / (2500 * exp(Vm / 20)))
+#dot(y1) = alpha_y1 * (1 - y1) - (beta_y1 * y1)
+
+# rapid_time_dependent_potassium_current_y2_gate
+#[RTDPC2]
+#use membrane.Vm, membrane.R, membrane.T, membrane.F
+#alpha_y2 = 1 / ((200 * exp(-Vm / 13)) + (20 * exp(-Vm / 300)))
+#beta_y2 = (1 / ((1600 * exp(Vm / 28)) + (2000 * exp(Vm / 1000)))) + (1 / (10000 * exp(Vm / 20)))
+#dot(y2) = alpha_y2 * (1 - y2) - (beta_y2 * y2)
+
+# rapid_time_dependent_potassium_current_y3_gate
+#[RTDPC3]
+#use membrane.Vm, membrane.R, membrane.T, membrane.F
+#alpha_y3 = 1 / ((10 * exp(Vm / 17)) + (2.5 * exp(Vm / 300)))
+#beta_y3 = 1 / ((0.35 * exp(-Vm / 17)) + (2 * exp(-Vm / 150)))
+#dot(y3) = alpha_y3 * (1 - y3) - (beta_y3 * y3)
+
+# slow_time_dependent_potassium_current
+[STDPC]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+P_Ks_K = 0.6955
+P_Na_IKs = 0.04 * P_Ks_K
+f_Ks_iz = 0.1
+f_Ks_blk = 0.9
+p_O_Ks_blk = (VG2.p_O_v)^2 * (0.99 * CG2.p_blk_O_c + 0.01)
+p_O_Ks_iz = (VG2.p_O_v)^2 * (0.99 * CG2.p_iz_O_c + 0.01)
+I_Ks_K_blk = f_Ks_blk * P_Ks_K * LTCC.GHK_K * p_O_Ks_blk
+I_Ks_Na_blk = f_Ks_blk * OTHER.P_Ks_Na * LTCC.GHK_Na * p_O_Ks_blk 
+I_Ks_K_iz = f_Ks_iz * P_Ks_K * LTCC.GHK_K * p_O_Ks_iz
+I_Ks_Na_iz = f_Ks_iz * OTHER.P_Ks_Na * LTCC.GHK_Na * p_O_Ks_iz
+#I_Ks = (I_Ks_K_iz + I_Ks_Na_iz) + (I_Ks_K_blk + I_Ks_Na_blk) 
+
+# from huvec2
+#[STDPC]
+#use membrane.Vm, membrane.R, membrane.T, membrane.F
+#para_Xs1_infinity = 1 / (1 + exp(-(Vm + 11.60) / 8.932))
+#tau_Xs1 = 817.3 + 1 / (0.0002326 * exp((Vm + 48.28) / 17.80) + 0.001292 * exp(-(Vm + 210.0) / 230.0))
+#dot(para_Xs1) = (para_Xs1_infinity - para_Xs1) / tau_Xs1
+#para_Xs2_infinity = para_Xs1_infinity
+#tau_Xs2 = 1 / (0.01 * exp((Vm - 50) / 20) + 0.0193 * exp(-(Vm + 66.54) / 31))
+#dot(para_Xs2) = (para_Xs2_infinity - para_Xs2) / tau_Xs2
+#para_RKs_blk = 1 + 0.6 / (1 + (0.000038 / BS.Ca_2_blk)^1.4)
+#para_RKs_iz = 1 + 0.6 / (1 + (0.000038 / IDZ.Ca_2_iz10)^1.4)
+#p_O_Ks_blk = para_Xs1 * para_Xs2 * para_RKs_blk
+#p_O_Ks_iz = para_Xs1 * para_Xs2 * para_RKs_iz
+#I_Ks_K_blk = RTF.f_Ks_blk * RTF.P_Ks_K * CC.GHK_K * p_O_Ks_blk
+#I_Ks_K_iz = RTF.f_Ks_iz * RTF.P_Ks_K * CC.GHK_K * p_O_Ks_iz
+#I_Ks_Na_blk = RTF.f_Ks_blk * OTHER.P_Ks_Na * CC.GHK_Na * p_O_Ks_blk
+#I_Ks_Na_iz = RTF.f_Ks_iz * OTHER.P_Ks_Na * CC.GHK_Na * p_O_Ks_iz
+#I_Ks = I_Ks_K_blk + I_Ks_K_iz + I_Ks_Na_blk + I_Ks_Na_iz
+
+# Voltage gate
+[VG2]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+dot(p_O_v) = a_1 * (1 - p_O_v) - B_1 * p_O_v
+a_1 = 1 / (150 * exp(-Vm / 25) + 900 * exp(-Vm / 200))
+B_1 = 1 / (1000 * exp(Vm / 13) + 220 * exp(Vm / 50))
+
+# Calcium gate
+[CG2]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+dot(p_blk_O_c) = a_2blk * p_blk_C_2 - B_2 * p_blk_O_c
+dot(p_blk_C_2) = a_3 * p_blk_C_1 - B_3 * p_blk_C_2 - a_2blk * p_blk_C_2 - B_2 * p_blk_O_c
+p_blk_C_1 = 1 - p_blk_C_2 - p_blk_O_c
+a_2blk = 2.24 * LORO.Ca_blk
+B_2 = 0.00296
+a_3 = 0.0003
+B_3 = 0.03
+dot(p_iz_O_c) = a_2iz * p_iz_C_2 - B_2 * p_iz_O_c
+dot(p_iz_C_2) = a_3 * p_iz_C_1 - B_3 * p_iz_C_2 - a_2iz * p_iz_C_2 - B_2 * p_iz_O_c
+p_iz_C_1 = 1 - p_iz_C_2 - p_iz_O_c
+a_2iz = 2.24 * IZ.Ca_iz
+
+# Transient outward K+ current
+[TOK]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+I_Kto = I_Kto_Na + I_Kto_K
+I_Kto_K = ENDO.P_Kto_K * LTCC.GHK_K * ENDO.p_O_Kto
+I_Kto_Na = ENDO.P_Kto_Na * LTCC.GHK_Na * ENDO.p_O_Kto
+
+# from huvec2
+#[TOK]
+#use membrane.Vm, membrane.R, membrane.T, membrane.F
+#a_infinity = 1 / (1 + exp(-(Vm - 14.34) / 14.82))
+#tau_a = 1.0515 / (1 / (1.2089 * (1 + exp(-(Vm - 18.41) / 29.38))) + 3.5 / (1 + exp((Vm + 100) / 29.38)))
+#dot(a) = (a_infinity - a) / tau_a
+#i_infinity = 1 / (1 + exp((Vm + 43.94) / 5.711))
+#tau_i_fast = 4.562 + 1 / (0.3933 * exp(-(Vm + 100) / 100) + 0.08004 * exp((Vm + 50) / 16.59))
+#tau_i_slow = 23.62 + 1 / (0.001416 * exp(-(Vm + 96.52) / 59.05) + 0.0000000000017808 * exp((Vm + 114.1) / 8.079))
+#A_i_fast = 1 / (1 + exp((Vm - 213.6) / 151.2))
+#A_i_slow = 1 - A_i_fast
+#dot(i_fast) = (i_infinity - i_fast) / tau_i_fast
+#dot(i_slow) = (i_infinity - i_slow) / tau_i_slow
+#i = A_i_fast * i_fast + A_i_slow * i_slow
+#p_O_Kto = a * i
+#I_Kto = RTF.G_Kto * p_O_Kto * (Vm - TIPC.E_K)
+
+# Endo
+[ENDO]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+P_Kto_K = 0.01825
+P_Kto_Na = 0.09 * P_Kto_K
+p_O_Kto = y_1Kto * y_2Kto
+dot(y_1Kto) = a_y1Kto * (1 - y_1Kto) - B_y1Kto * y_1Kto
+dot(y_2Kto) = a_y2Kto * (1 - y_2Kto) - B_y2Kto * y_2Kto
+a_y1Kto = 1 / (9 * exp(-Vm / 20))
+B_y1Kto = 1 / (2.1 * exp(Vm / 60))
+a_y2Kto = 1 / (950 * exp(Vm / 500))
+B_y2Kto = (1 / (40 * exp(-Vm / 9))) + 13 * exp(-Vm / 1000)
+
+# Voltage-dependent potassium current
+[VDPC]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+I_Kpl = P_Kpl * (Vm / (1 - exp(-Vm / 13))) / LTCC.GHK_K
+P_Kpl = 0.000043 * (EIC.K_o / 5.4)^0.16
+
+# Background calcium current
+[BCC]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+I_Cab = I_Cab_iz + I_Cab_blk
+I_Cab_blk = 0.0006822 * f_Cab_blk * LTCC.GHK_Ca
+I_Cab_iz = 0.0006822 * f_Cab_iz * LTCC.GHK_Ca
+
+f_Cab_blk = 0.9
+f_Cab_iz = 0.1
+
+# Background non-selective cation current
+[BNSCC]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+I_bNSC = I_bNSC_K + I_bNSC_Na
+I_bNSC_K = P_bNSC_K * LTCC.GHK_K
+I_bNSC_Na = P_bNSC_Na * LTCC.GHK_Na
+P_bNSC_K = 0.00014
+P_bNSC_Na = 0.00035 
+
+# Calcium-activated background cation current
+[CAB]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+I_I_Ca = I_I_Ca_Na_iz + I_I_Ca_K_iz + I_I_Ca_Na_blk + I_I_Ca_K_blk 
+I_I_Ca_Na_blk = P_I_Ca_Na * f_I_Ca_blk * LTCC.GHK_Na * p_O_blk
+I_I_Ca_K_blk = P_I_Ca_K * f_I_Ca_blk * LTCC.GHK_K * p_O_blk
+I_I_Ca_Na_iz = P_I_Ca_Na * f_I_Ca_iz * LTCC.GHK_Na * p_O_iz
+I_I_Ca_K_iz = P_I_Ca_K * f_I_Ca_iz * LTCC.GHK_K * p_O_iz
+p_O_blk = 1 / (1 + (0.0012 / LORO.Ca_blk)^3)
+p_O_iz = 1 / (1 + (0.0012 / IZ.Ca_iz)^3)
+
+f_I_Ca_iz = 0.1
+f_I_Ca_blk = 0.9
+P_I_Ca_Na = 0.00273
+P_I_Ca_K = P_I_Ca_Na
+
+# ATP-sensitive potassium current
+[ASP]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+I_KATP = G_KATP * (Vm - TIPC.E_K) * P_O_KATP * X_IKATP
+P_O_KATP = 0.8 / (1 + (AP.ATPi / 0.1)^2)
+X_IKATP = 0.0236 * (EIC.K_o)^0.24
+G_KATP = 17.674
+
+# Na+/K+ pump current
+[NPC]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+I_NaK = Amp_NaK * v_cyc_NaK
+Amp_NaK = 24.35
+I_NaK_Na = Stoi_Nak_Na * I_NaK
+I_NaK_K = Stoi_Nak_K * I_NaK
+Stoi_Nak_Na = 3
+Stoi_Nak_K = -2
+MgADP = 36.3
+P_14_15 = 1 - P_1_6 - P_7 - P_8_13
+v_cyc_NaK = a_20 * P_7 - a_21 * P_8_13
+dot(P_1_6) = -a_10 * P_1_6 + a_11 * P_7 + a_40 * P_14_15 - a_41 * P_1_6
+dot(P_7) = -a_20 * P_7 + a_21 * P_8_13 + a_10 * P_1_6 - a_11 * P_7
+dot(P_8_13) = -a_30 * P_8_13 + a_31 * P_14_15 + a_20 * P_7 - a_21 * P_8_13
+
+
+a_10 = (k_10 * (Na_il)^3) / ((1 + Na_il)^3 + (1 + K_il)^2 - 1)
+a_20 = k_20 
+a_30 = (k_30 * (K_ol)^2) / ((1 + Na_ol)^3 + (1 + K_ol)^2 - 1)
+a_40 = (k_40 * MgATPl) / (1 + MgATPl)
+
+a_11 = k_11 * MgADP
+a_21 = (k_21 * (Na_ol)^3) / ((1 + Na_ol)^3 + (1 + K_ol)^2 - 1)
+a_31 = (k_31 * Pi * H) / (1 + MgATPl)
+a_41 = (k_41 * (K_il)^2) / ((1 + Na_il)^3 + (1 + K_il)^2 - 1)
+
+k_10 = 0.72
+k_11 = 0.08
+k_20 = 0.08
+k_21 = 0.008
+k_30 = 4
+k_31 = 8000
+k_40 = 0.3
+k_41 = 0.2
+Pi = 0.50872066859173026
+H = 0.0001
+
+Na_il = IIC.Na_i / K_d_Nai
+Na_ol = EIC.Na_o / K_d_Nao
+K_il = IIC.K_i / K_d_Ki
+K_ol = EIC.K_o / K_d_Ko
+MgATPl = SS.MgATPcyt / K_d_MgATP
+K_d_Nao = K_d_Naoo * exp((semo_Nao * F * Vm) / (R * T))
+K_d_Nai = K_d_Naio * exp((semo_Nai * F * Vm) / (R * T))
+K_d_Ko = K_d_Koo * exp((semo_Ko * F * Vm) / (R * T))
+K_d_Ki = K_d_Kio * exp((semo_Ki * F * Vm) / (R * T))
+
+K_d_Naio = 5
+K_d_Naoo = 26.8
+K_d_Kio = 18.8
+K_d_Koo = 0.8
+K_d_MgATP = 0.6
+semo_Nai = -0.14
+semo_Nao = 0.44
+semo_Ki = -0.14
+semo_Ko = 0.23
+
+# Na+/Ca2+ exchange current
+[NCEC]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+I_NCX_Na_blk = 3 * I_NCX_blk
+I_NCX_Na_iz = 3 * I_NCX_iz
+I_NCX_Ca_blk = -2 * I_NCX_blk
+I_NCX_Ca_iz = -2 * I_NCX_iz
+I_NCX_blk = f_NCX_blk * AMP_NCX * v_cyc_NCX_blk
+I_NCX_iz = f_NCX_iz * AMP_NCX * v_cyc_NCX_iz
+#v_cyc_NCX_blk = k_1 * q_blk_E_1Na * p_E_1_NCX_blk - k_2 * q_blk(E_2Na) * p_E_2_NCX_blk
+#v_cyc_NCX_iz = k_1 * q_iz_E_1Na * p_E_1_NCX_iz - k_2 * q_iz(E_2Na) * p_E_2_NCX_iz
+v_cyc_NCX_blk = k_1 * q_blk_E_1Na * p_E_1_NCX_blk - k_2 * q_E_2Na * p_E_2_NCX_blk
+v_cyc_NCX_iz = k_1 * q_iz_E_1Na * p_E_1_NCX_iz - k_2 * q_E_2Na * p_E_2_NCX_iz
+
+I_NCX = I_NCX_iz + I_NCX_blk
+f_NCX_iz = 0.1
+f_NCX_blk = 0.9
+AMP_NCX = 61.06
+
+dot(p_E_1_NCX_blk) = p_E_2_NCX_blk * a_E + p_I_1_NCX_blk * B_1_blk + p_I_2_NCX_blk * B_2_blk + p_E_1_NCX_blk * (B_E_blk + a_1_blk + a_2_blk)
+dot(p_E_1_NCX_iz) = p_E_2_NCX_iz * a_E + p_I_1_NCX_iz * B_1_iz + p_I_2_NCX_iz * B_2_iz + p_E_1_NCX_iz * (B_E_iz + a_1_iz + a_2_iz)
+dot(p_I_1_NCX_blk) = p_E_1_NCX_blk * a_1_blk - p_I_1_NCX_blk * B_1_blk
+dot(p_I_1_NCX_iz) = p_E_1_NCX_iz * a_1_iz - p_I_1_NCX_iz * B_1_iz
+dot(p_I_2_NCX_blk) = p_E_1_NCX_blk * a_2_blk - p_I_2_NCX_blk * B_2_blk
+dot(p_I_2_NCX_iz) = p_E_1_NCX_iz * a_2_iz - p_I_2_NCX_iz * B_2_iz
+p_E_2_NCX_blk = 1 - p_E_1_NCX_blk - p_I_1_NCX_blk - p_I_2_NCX_blk
+p_E_2_NCX_iz = 1 - p_E_1_NCX_iz - p_I_1_NCX_iz - p_I_2_NCX_iz
+q_blk_E_1Na = 1 / (1 + (K_m_Nai / IIC.Na_i)^3 * (1 + (LORO.Ca_blk / K_m_Cai)))
+q_iz_E_1Na = 1 / (1 + (K_m_Nai / IIC.Na_i)^3 * (1 + (IZ.Ca_iz / K_m_Cai)))
+q_blk_E_1Ca = 1 / (1 + (K_m_Cai / LORO.Ca_blk) * (1 + (IIC.Na_i / K_m_Nai)^3))
+q_iz_E_1Ca = 1 / (1 + (K_m_Cai / IZ.Ca_iz) * (1 + (IIC.Na_i / K_m_Nai)^3))
+q_E_2Na = 1 / (1 + (K_m_Nao / EIC.Na_o)^3 * (1 + (EIC.Ca_o / K_m_Cao)))
+q_E_2Ca = 1 / (1 + (K_m_Cao / EIC.Ca_o) * (1 + (EIC.Na_o / K_m_Nao)^3))
+
+a_1_blk = q_blk_E_1Na * (f_Caina_blk * a_1_on + (1 - f_Caina_blk) * a_1_off)
+a_1_iz = q_iz_E_1Na * (f_Caina_iz * a_1_on + (1 - f_Caina_iz) * a_1_off)
+B_1_blk = f_Caina_blk * B_1_on + (1 - f_Caina_blk) * B_1_off
+B_1_iz = f_Caina_iz * B_1_on + (1 - f_Caina_iz) * B_1_off
+a_2_blk = f_Caina_blk * a_2_on + (1 - f_Caina_blk) * a_2_off
+a_2_iz = f_Caina_iz * a_2_on + (1 - f_Caina_blk) * a_2_off
+B_2_blk = f_Caina_blk * B_2_on + (1 - f_Caina_blk) * B_2_off
+B_2_iz = f_Caina_iz * B_2_on + (1 - f_Caina_iz) * B_2_off
+a_E = k_2 * q_E_2Na + k_4 * q_E_2Ca
+B_E_blk = k_1 * q_blk_E_1Na + k_3 * q_blk_E_1Ca
+B_E_iz = k_1 * q_iz_E_1Na + k_3 * q_iz_E_1Ca
+f_Caina_blk = LORO.Ca_blk / (LORO.Ca_blk + K_m_act) 
+f_Caina_iz = IZ.Ca_iz / (IZ.Ca_iz + K_m_act)
+k_1 = exp((0.32 * F * Vm) / (R * T))
+k_2 = exp(((0.32 - 1) * F * Vm) / (R * T))
+k_3 = 1
+k_4 = 1
+a_1_on = 0.002
+a_1_off = 0.0015
+B_1_on = 0.0012
+B_1_off = 0.0000005
+a_2_on = 0.00006
+a_2_off = 0.02
+B_2_on = 0.18
+B_2_off = 0.0002
+K_m_Nao = 87.5
+K_m_Nai = 20.74854
+K_m_Cao = 1.38
+K_m_Cai = 0.0184
+K_m_act = 0.004
+
+# Plasma membrane Ca2+-ATPase current
+[PMCAC]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+I_PMCA = I_PMCA_iz + I_PMCA_blk
+I_PMCA_blk = f_PMCA_blk * Amp_PMCA * ((LORO.Ca_blk)^1.6) / ((K_m)^1.6 + (LORO.Ca_blk)^1.6)
+I_PMCA_iz = f_PMCA_iz * Amp_PMCA * ((IZ.Ca_iz)^1.6) / ((K_m)^1.6 + (IZ.Ca_iz)^1.6)
+
+f_PMCA_iz = 0.1
+f_PMCA_blk = 0.9
+Amp_PMCA = 0.1615
+K_m = 0.0005
+
+# RyR channel and the Ca2+ leak from SR
+[RCAC]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+J_rel_SR = p_RyR * (p_O + p_O_basal) * (SRRL.Ca_SRrl - JNC.Ca_jnc)
+p_O = CARU.Y_ooo + CARU.Y_coo + CARU.Y_cco + CARU.Y_oco
+p_O_basal = 0.0000504
+p_RyR = 3532
+B0 = (LORO.Ca_nd)^2 / (t_R * (LORO.Ca_nd)^2 + K_RyR^2)
+B1 = up_R / t_R
+u0 = ((LORO.Ca_nd)^2 + c * (K_RyR)^2) / (T_R * (LORO.Ca_nd)^2 + (K_RyR)^2)
+u1 = seta_R * d * ((LORO.Ca_nd)^2 + c * (K_RyR)^2) / (T_R * (d * (LORO.Ca_nd)^2 + c * (K_RyR)^2)) * 1 / (1 + (0.8 / SRRL.Ca_SRrl)^2)
+
+K_RyR = 20.5
+t_R = 0.1
+up_R = 0.5
+T_R = 2.43
+seta_R = 0.00048
+c = 0.01
+d = 100
+
+# LCC closed; RyR closed
+[LORO]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+Ca_nd = JNC.Ca_jnc
+g_D = 0.065
+J_R = 0.02
+J_L = 0.000913
+Z_Ca = 1
+pV = (Z_Ca * F * Vm) / (R * T)
+dot(Ca_blk) = Ca_nd
+
+# Sarcoplasmic reticulum Ca2+ pump (SERCA) current 
+[SERCA2]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+a1 = 25900 * SERCA.MgATP
+a2 = 2540 / (1 + (RTF.K_dCai / LORO.Ca_blk)^1.7)
+a3 = 5.35 / (1 + (IIC.Ca_2_SRup / RTF.K_dCasr)^1.7)
+B1 = 0.1972 / (1 + (LORO.Ca_blk / RTF.K_dCai)^1.7)
+B2 = (25435 * NPC.MgADP) / (1 + (RTF.K_dCasr / IIC.Ca_2_SRup)^1.7)
+B3 = 149* Pi
+Pi = 0.50872066859173026
+v_cyc = (6.86 * (a1 * a2 * a3 - B1 * B2 * B3)) / (a2 * a3 + B1 * a3 + B1 * B2 + a1 * a3 + B2 * a1 + B2 * B3 + a1 * a2 + B3 * B1 + B3 * a2) 
+
+# Ca2+ transfer from SR uptake site to release site
+[CTFS]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+P_trans = 22.745
+J_trans_SR = P_trans * (IIC.Ca_2_SRup - SRRL.Ca_SRrl)
+J_CaTnC_3Ca = (3 * (CT.TSCa_3 + CT.TSCa_3W + CT.TSCa_3S)) / 1000
+
+
+
+# slow_time_dependent_potassium_current_y1_gate
+#[STDPC1]
+#use membrane.Vm, membrane.R, membrane.T, membrane.F
+#alpha_y1 = 1 / ((85 * exp(-Vm / 10.5)) + (370 * exp(-Vm / 62)))
+#beta_y1 = 1 / ((1450 * exp(Vm / 20)) + (260 * exp(Vm / 100)))
+#dot(y1) = alpha_y1 * (1 - y1) - (beta_y1 * y1)
+
+# slow_time_dependent_potassium_current_y2_gate
+#[STDPC2]
+#use membrane.Vm, membrane.R, membrane.T, membrane.F
+#alpha_y2 = 3.7 * IIC.Ca_i
+#beta_y2 = 0.004444
+#dot(y2) = alpha_y2 * (1 - y2) - (beta_y2 * y2)
+
+# transient_outward_current
+#[TOC]
+#use membrane.Vm, membrane.R, membrane.T, membrane.F
+#P_to_K = 0.033
+#P_to_Na = 0.00297
+#i_to_K = P_to_K * CFE.CF_K * TOC1.y1^3 * TOC2.y2
+#i_to_Na = P_to_Na * CFE.CF_Na * TOC1.y1^3 * TOC2.y2
+#i_to = i_to_Na + i_to_K
+
+# transient_outward_current_y1_gate
+#[TOC1]
+#use membrane.Vm, membrane.R, membrane.T, membrane.F
+#alpha_y1 = 1 / ((11 * exp(-Vm / 28)) + (0.2 * exp(-Vm / 400)))
+#beta_y1 = 1 / ((4.4 * exp(Vm / 16)) + (0.2 * exp(Vm / 500)))
+#dot(y1) = alpha_y1 * (1 - y1) - (beta_y1 * y1)
+
+# transient_outward_current_y2_gate
+#[TOC2]
+#use membrane.Vm, membrane.R, membrane.T, membrane.F
+#alpha_y2 = (0.0038 * exp(-(Vm + 13.5) / 11.3)) / (1 + (0.051335 * exp(-(Vm + 13.5) / 11.3)))
+#beta_y2 = (0.0038 * exp((Vm + 13.5) / 11.3)) / (1 + (0.067083 * exp((Vm + 13.5) / 11.3)))
+#dot(y2) = alpha_y2 * (1 - y2) - (beta_y2 * y2)
+
+# background_NSC_current
+[BNC]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+P_bNSC = 0.385
+i_bNSC_K = 0.4 * P_bNSC * CFE.CF_K
+i_bNSC_Na = P_bNSC * CFE.CF_Na
+i_bNSC = i_bNSC_K + i_bNSC_Na
+
+# background_Kpl_current
+[BKPI]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+P_Kpl = 0.00011 * (EIC.K_o / 5.4)^0.16
+i_Kpl = if(Vm == -3, P_Kpl * CFE.CF_K * 13.0077, (P_Kpl * CFE.CF_K * (Vm + 3)) / (1 - exp(-(Vm + 3) / 13)))
+
+# background_lCa_current
+[BIC]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+P_lCa = 0.11
+i_lCa_K = P_lCa * CFE.CF_K * p_open
+i_lCa_Na = P_lCa * CFE.CF_Na * p_open
+p_open = 1 / (1 + (0.0012 / IIC.Ca_i)^3)
+i_lCa = i_lCa_K + i_lCa_Na
+
+# background_KATP_current
+[BKATP]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+P_KATP = 0.0236
+N = 2333
+gamma = P_KATP * N * (EIC.K_o / 1)^0.24
+p_open = 0.8 / (1 + (AP.ATPi / 0.1)^2)
+i_KATP = gamma * (Vm - TIPC.E_K) * p_open 
+
+# background_Cab_current
+[BCC2]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+P_Cab = 0.04
+i_Cab = P_Cab * CFE.CF_Ca
+
+# sodium_calcium_exchanger
+[SCE]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+P_NaCa = 6.81
+k3 = 1
+k4 = 1
+Km_Nai = 8.75
+Km_Nao = 87.5
+Km_Cai = 0.00138
+Km_Cao = 1.38
+Partition = 0.32
+p_E1Na = 1 / (1 + ((Km_Nai / IIC.Na_i)^3 * (1 + (IIC.Ca_i / Km_Cai))))
+p_E2Na = 1 / (1 + ((Km_Nao / EIC.Na_o)^3 * (1 + (EIC.Ca_o / Km_Cao))))
+p_E1Ca = 1 / (1 + ((Km_Cai / IIC.Ca_i) * (1 + (IIC.Na_i / Km_Nai)^3)))
+p_E2Ca = 1 / (1 + ((Km_Cao / EIC.Ca_o) * (1 + (EIC.Na_o / Km_Nao)^3)))
+k1 = exp((Partition * F * Vm) / (R * T))
+k2 = exp(((Partition - 1) * F * Vm) / (R * T))
+i_NaCa = P_NaCa * membrane.Cm * (k1 * p_E1Na * SCEY.y - (k2 * p_E2Na * (1 - SCEY.y)))
+
+# sodium_calcium_exchanger_y_gate
+[SCEY]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+alpha_y = SCE.k2 * SCE.p_E2Na + SCE.k4 * SCE.p_E2Ca 
+beta_y = SCE.k1 * SCE.p_E1Na + SCE.k3 * SCE.p_E1Ca
+dot(y) = alpha_y * (1 - y) - (beta_y * y)
+
+# sodium_potassium_pump
+[SPP]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+k2 = 0.04
+k3 = 0.01
+k4 = 0.165
+Km_Nai = 4.05
+Km_Nao = 69.8
+Km_Ki = 32.88
+Km_Ko = 0.258
+Km_ATP = 0.094
+P_NaK = 21
+p_E1Na = 1 / (1 + ((Km_Nai / IIC.Na_i)^1.06 * (1 + (IIC.K_i / Km_Ki)^1.12)))
+p_E2Na = 1 / (1 + ((Km_Nao / Nao_Eff)^1.06 * (1 + (EIC.K_o / Km_Ko)^1.12)))
+p_E1K = 1 / (1 + ((Km_Ki / IIC.K_i)^1.12 * (1 + (IIC.Na_i / Km_Nai)^1.06)))
+p_E2K = 1 / (1 + ((Km_Ko / EIC.K_o)^1.12 * (1 + (Nao_Eff / Km_Nao)^1.06)))
+k1 = 0.37 / (1 + exp(Km_ATP / AP.ATPi))
+Nao_Eff = EIC.Na_o * exp(-(0.82 * F * Vm) / (R * T))
+i_NaK = P_NaK * membrane.Cm * (k1 * p_E1Na * SPPY.y - (k2 * p_E2Na * (1 - SPPY.y)))
+
+# sodium_potassium_pump_y_gate
+[SPPY]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+alpha_y = SPP.k2 * SPP.p_E2Na + SPP.k4 * SPP.p_E2K
+beta_y = SPP.k1 * SPP.p_E1Na + SPP.k3 * SPP.p_E1K
+dot(y) = alpha_y * (1 - y) - (beta_y * y)
+
+# SR_calcium_pump
+[SRCP]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+k1 = 0.01
+k3 = 1
+k4 = 0.01
+Km_CaSR = 0.08
+Km_CaCyto = 0.0008
+Km_ATP = 0.1
+i_max = 162500
+p_E1Ca = 1 / (1 + (Km_CaSR / CCSR.Caup))
+p_E2Ca = 1 / (1 + (Km_CaCyto / IIC.Ca_i))
+p_E1 = 1 - p_E1Ca
+p_E2 = 1 - p_E2Ca
+k2 = 1 / (1 + (Km_ATP / AP.ATPi))
+i_SR_U = i_max * (k1 * p_E1Ca * SRCPY.y - (k2 * p_E2Ca * (1 - SRCPY.y)))
+
+# SR_calcium_pump_y_gate
+[SRCPY]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+alpha_y = SRCP.k2 * SRCP.p_E2Ca + SRCP.k4 * SRCP.p_E2
+beta_y = SRCP.k1 * SRCP.p_E1Ca + SRCP.k3 * SRCP.p_E1
+dot(y) = alpha_y * (1 - y) - (beta_y * y)
+
+# RyR_channel
+[RC]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+P_RyR = 62000
+k4 = 0.000849
+Diadid_Factor = -150
+i_RyR = P_RyR * (CCSR.Carel - IIC.Ca_i) * p_open_RyR
+dot(p_open_RyR) = p_close_RyR * k1 - (p_open_RyR * k2)
+dot(p_close_RyR) = k3 * (1 - (p_open_RyR + p_close_RyR))-((k1 + k4) * p_close_RyR)
+k1 = 280000 * (IIC.Ca_i)^2 + Diadid_Factor * LCC.CaDiadic
+k2 = 0.08 / (1 + (0.36 / CCSR.Carel))
+k3 = 0.000377 * (CCSR.Carel)^2
+
+# SR_T_current
+[SRTC]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+P_SR_T = 386
+i_SR_T = P_SR_T * (CCSR.Caup - CCSR.Carel)
+
+# SR_L_current
+[SRLC]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+P_SR_L = 459
+i_SR_L = P_SR_L * (CCSR.Caup - IIC.Ca_i)
+
+# Ca_concentrations_in_SR
+[CCSR]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+CSQN_max = 10
+K_mCSQN = 0.8
+V_rel = 160
+V_up = 400
+b1 = (CSQN_max - Ca_Total) + K_mCSQN 
+c1 = K_mCSQN * Ca_Total
+Carel = (sqrt(b1^2 + 4 * c1) - b1) / 2
+dot(Ca_Total) = (SRTC.i_SR_T - RC.i_RyR) / (2 * F * V_rel)
+dot(Caup) = (-SRCP.i_SR_U - SRTC.i_SR_T - SRLC.i_SR_L) / (2 * F * V_up)
+
+# NL_model
+[NM]
+use membrane.Vm, membrane.R, membrane.T, membrane.F
+T_t = 0.07
+Y_1 = 39
+Y_2 = 0.0039
+Y_3 = 0.03
+Y_4 = 0.12
+Y_d = 0.027
+Z_1 = 0.03
+Z_2 = 0.0039
+Z_3 = 1560
+L_a = 1.17
+L = 0.9623799975411884
+KForceEC = 140000
+ZeroForceEL = 0.97
+KForceLinearEc = 200
+ForceFactor = 1800000
+B = 1.2
+h_c = 0.005
+h = L - X 
+p = 1 - pCa - pCaCB - pCB
+Q_b = Y_1 * IIC.Ca_i * p - (Z_1 * pCa)
+EffFraction = exp(-20 * (L - L_a)^2)
+Q_a = Y_2 * pCa * EffFraction - (Z_2 * pCaCB) 
+Q_r = Y_3 * pCaCB - (Z_3 * pCB * IIC.Ca_i)
+Q_d = Y_4 * pCB
+Q_d1 = Y_d * dot(X)^2 * pCB
+Q_d2 = Y_d * dot(X)^2 * pCaCB
+dot(pCa) = Q_b - Q_a
+dot(pCaCB) = Q_a - Q_r - Q_d2
+dot(pCB) = Q_r - Q_d - Q_d1
+dCaidt = T_t * (Q_d2 + Q_r - Q_b)
+dATPdt = (-0.4) * pCaCB * T_t 
+CBBound = T_t * (pCaCB + pCB)
+NewCBF = ForceFactor * CBBound
+ForceEcomp = KForceEC * (ZeroForceEL - L)^5 + KForceLinearEc * (ZeroForceEL - L)
+ForceCB = NewCBF * h
+ForceExt=-(ForceEcomp) + ForceCB
+dot(X) = B * (h - h_c)
+
+[RTF]
+R = 8.3143
+T = 310
+F = 96.4867
+k_on_CaM = 34
+B_tot_CaM = 0.024
+k_off_CaM = 0.238
+k_on_TnCh = 2.37
+B_tot_TnCh = 0.12
+k_off_TnCh = 0.000032
+k_on_SR = 100
+B_tot_SR = 0.0171
+k_off_SR = 0.06
+L_bound_iz = 0.0075621764602356
+B_tot_L_iz = 0.6078
+k_off_L_iz = 1.3
+k_on_L_iz = 100
+H_bound_iz = 0.0769149150028914
+B_tot_H_iz = 0.2178
+k_off_H_iz = 0.03
+k_on_H_iz = 100
+B_tot_L_jnc = 1.1095
+Ca_2_jnc = 0
+k_off_L_jnc = 1.3
+k_on_L_jnc = 100
+B_tot_H_jnc = 0.398
+k_off_H_jnc = 0.03
+k_on_H_jnc = 100
+B_tot_CSQN = 3
+k_off_CSQN = 65
+k_on_CSQN = 100
+G_dCa_jnciz = 3395.88
+Sc_Cell = 1
+G_dCa_izblk = 3507.78
+P_trans = 4.8037
+T_L = 147.51
+K_L = 0.0044
+ATP = 6
+P_CaL_Ca = 14.21
+Ca_o = 1.8
+Na_o = 140
+K_o = 4.5
+f_CaL_blk = 0.1
+f_CaL_iz = 0.15
+f_CaL_jnc = 0.75
+k_I2O = 0.0001312
+k_I1I2 = 0.00534
+k_I1O = 0.01
+f_LSM = 0.13125
+P_Na = 8.1072
+Mg_2_cyt = 0.8
+SPM = 5.0
+G_K1 = 1.353
+f_mode1 = 0.9
+G_Kr = 0.0166
+f_Ks_iz = 0.1
+f_Ks_blk = 0.9
+P_Ks_K = 0.002782
+G_Kto = 0.0312
+P_Kpl = 0.0000172
+f_Cab_blk = 0.9
+P_Cab = 0.00006822
+f_Cab_iz = 0.1
+P_bNSC_K = 0.00014
+P_bNSC_Na = 0.00035
+f_l_Ca_blk = 0.9
+P_l_Ca_Na = 0.00273
+f_l_Ca_iz = 0.1
+ATP_cyt = 6.67701543987464
+G_KATP = 17.674
+delta_Nai = -0.14
+K_d_Nai_0 = 5
+delta_Nao = 0.44
+K_d_Nao_0 = 26.8
+delta_Ki = -0.14
+K_d_Ki_0 = 18.8
+delta_Ko = 0.23
+K_d_Ko_0 = 0.8
+K_d_MgATP = 0.6
+MgATP_cyt = 6.631643709767415
+k_1_plus = 0.72
+k_1_minus = 0.08
+k_2_plus = 0.08
+k_2_minus = 0.008
+k_3_plus = 4
+k_3_minus = 8000
+k_4_plus = 0.3
+k_4_minus = 0.2
+Pi = 0.50872066859173026
+H = 0.0001
+Amp_NaK = 25.178
+Stoi_NaK_Na = 3
+Stoi_NaK_K = -2
+K_m_act = 0.004
+alpha_1_on = 0.002
+alpha_1_off = 0.0015
+alpha_2_on = 0.00006
+alpha_2_off = 0.02
+beta_1_on = 0.0012
+beta_1_off = 0.0000005
+beta_2_on = 0.18
+beta_2_off = 0.0002
+K_m_Nai = 20.74854
+K_m_Nao = 87.5
+K_m_Cai = 0.0184
+K_m_Cao = 1.38
+k_3 = 1.0
+k_4 = 1.0
+Amp_NCX = 30.53
+f_NCX_blk = 0.9
+f_NCX_iz = 0.1
+K_m = 0.0005
+Amp_PMCA = 0.19
+f_PMCA_blk = 0.9
+f_PMCA_iz = 0.1
+J_L = 0.000913
+J_R = 0.02
+g_D = 0.065
+Q_10 = 3
+sloc0 = 0.1
+f_n = 7
+N_RyR = 10
+p_O_RyR_base = 0.000075
+P_RyR = 5191
+K_dCai = 0.0027
+K_dCasr = 1.378
+Amp_SERCA = 106.4448
+I_Kto_Na = 0
+I_app = 0
+halfSL = 0.91
+TS_tot = 23
+propFh = 28000
+Za = 0.0023
+Yv = 1.5
+Yd = 0.0333
+Yc = 1
+Lc = 1.2
+Zb = 0.1397
+Yb = 0.1816
+rate_f = 0.0023
+convertF = 15
+eqvhalfSL = 1.15
+Zp = 0.2095
+Yp = 0.1397
+Zr = 7.2626
+Yr = 0.1397
+Zq = 0.3724
+Yq = 0.2328
+hwr = 0.0001
+rate_B = 0.5
+hpr = 0.006
+dt = 0.01
+
+[[protocol]]
+# Level  Start    Length   Period   Multiplier
+1         50         3      1000        0
